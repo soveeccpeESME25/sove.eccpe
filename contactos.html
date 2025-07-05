@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SOVE — E.C.C.P.E</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="./IMG/icon-web.ico" rel="icon" type="image/x-icon"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+    <style>
+        .contacto-mejorado {
+          padding: 50px 20px;
+          background-color: #f7f7f7;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .bloques-contacto {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          margin-bottom: 30px;
+          width: 100%;
+          max-width: 1200px;
+      }
+      .bloque {
+          flex: 1 1 260px;
+          background-color: white;
+          border-radius: 15px;
+          padding: 25px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          text-align: center;
+      }
+      .bloque i {
+          font-size: 2em;
+          color: #0a962f;
+          margin-bottom: 10px;
+      }
+      .bloque h3 {
+          color: #1d2443;
+          margin-bottom: 10px;
+      }
+      .bloque p {
+          margin: 5px 0;
+          font-size: 0.95em;
+          color: #444;
+      }
+      .mapa-contacto iframe {
+          width: 100%;
+          max-width: 900px;
+          height: 350px;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      @media (max-width: 768px) {
+          .bloques-contacto {
+            flex-direction: column;
+            align-items: center;
+        }
+        .bloque {
+            width: 100%;
+            max-width: 350px;
+        }
+        .mapa-contacto iframe {
+            height: 280px;
+        }
+    }
+
+    .mapa-contacto {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+</style></head>
+<body>
+<!-- Sección 1: Encabezado -->
+<section class="seccion cabecera-verde">
+    <div class="col redes">
+        <p><strong>Redes Sociales:</strong>
+            <a class="icon-circle" href="https://www.facebook.com/share/16D8nrnwRR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon-circle" href="https://wa.me/593990230465" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </p>
+    </div>
+    <div class="col titulo-centro">
+        <h2>Escuela de Capacitación para Conductores Profesionales de Esmeraldas</h2>
+        <p>Sindicato Obreros del Volante de Esmeraldas</p>
+    </div>
+    <div class="col correo" style="text-align: right;">
+        <p><a class="correo-blanco" href="mailto:sove.eccpe@gmail.com"><i class="fas fa-envelope icono-correo"></i> sove.eccpe@gmail.com</a></p>
+    </div>
+</section>
+<!-- NAVBAR PRINCIPAL -->
+<header class="navbar transparente">
+    <nav class="nav-container">
+        <div class="nav-logo"><a href="index.html"><img alt="Logo SOVE" class="logo-navbar" src="img/SOVE_ECCPE.png"/></a></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links right">
+                <li><a href="index.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a class="verde sove-toggle" href="#">S.O.V.E. ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="autoridades.html">Autoridades</a></li>
+                        <li><a href="transparencia.html">Eventos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Marco Legal</a></li>
+                        <li> <a href="https://drive.google.com/file/d/1kY9H4NSQLBHBdLx3G8VhyV2xz1ulZbFn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Reglamento Interno</a></li>
+                    </ul>
+                </li>
+                <li><a href="oferta.html">OFERTAS ACADÉMICAS </a></li>
+                <li><a href="https://mail.sove.ec/moodle/login/index.php">ENTORNO VIRTUAL</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- Menú Hidden-Bar -->
+<div class="hidden-bar" id="hidden-bar">
+    <div class="hidden-bar-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img alt="Logo SOVE" src="img/SOVE_ECCPE.png" style="height: 55px;"/>
+        </div>
+        <button id="close-hidden-bar" style="background: none; border: none; font-size: 1.8em; color: white;">×</button>
+    </div>
+    <nav class="hidden-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu-toggle">
+                <span class="menu-item">S.O.V.E. <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button></span>
+                <ul class="submenu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="autoridades.html">Autoridades</a></li>
+                    <li><a href="transparencia.html">Eventos</a></li>
+                    <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Marco Legal</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1kY9H4NSQLBHBdLx3G8VhyV2xz1ulZbFn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Reglamento Interno</a></li>
+                </ul>
+            </li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="https://mail.sove.ec/moodle/login/index.php">Entorno Virtual</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+<!-- <a class="login-btn" href="login.html">INICIA SESIÓN</a>-->
+</ul>
+</nav>
+</div>
+<div id="overlay"></div>
+<button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
+<!-- Sección 2: Imagen de portada con carrusel automático -->
+<section class="carrusel-fullscreen" id="portada-carrusel"><button class="carrusel-nav prev" id="carrusel-prev">❮</button><button class="carrusel-nav next" id="carrusel-next">❯</button>
+    <div class="carrusel-slide" style="background-image: url('img/carrusel-1.jpg');">
+        <div class="overlay"></div>
+        <div class="contenido-carrusel">
+            <h1>Bienvenidos a S.O.V.E.</h1>
+            <p>Capacitación Profesional con Calidad</p>
+            <a class="btn-verde" href="nosotros.html">Conócenos</a>
+        </div>
+    </div>
+    <div class="carrusel-slide" style="background-image: url('img/carrusel-2.jpg'); display: none;">
+        <div class="overlay"></div>
+        <div class="contenido-carrusel">
+            <h1>Tu Futuro Sobre Ruedas</h1>
+            <p>Licencias Profesionales para un mejor mañana</p>
+            <a class="btn-verde" href="oferta.html">Ver oferta</a>
+        </div>
+    </div>
+    <div class="carrusel-slide" style="background-image: url('img/carrusel-3.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Escuela de Capacitación para Conductores Profesionales de Esmeraldas.</h1><p>Formamos conductores profesionales con seguridad y excelencia.</p><div class="botonera"><a class="btn-verde" href="https://wa.me/593990230465" target="_blank">Únete</a><a class="btn-transparente" href="https://mail.sove.ec/moodle/login/index.php" target="_blank">Inicia Sesión</a></div></div></div><div class="carrusel-slide" style="background-image: url('img/carrusel-4.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Reglas claras, caminos seguros. ¡Conduce con nosotros!</h1></div></div><div class="carrusel-indicadores"><span class="indicador activo"></span><span class="indicador"></span><span class="indicador"></span><span class="indicador"></span></div></section>
+<!-- Sección 3: Información técnica y ubicación -->
+<section class="seccion contacto-mejorado">
+    <div class="bloques-contacto">
+        <div class="bloque">
+            <i class="fas fa-tools"></i>
+            <h3>Soporte Técnico</h3>
+            <p><strong>Horario:</strong><br/>Lunes a Viernes: 08:00 - 17:00<br/>Sábado: 08:00 - 12:00</p>
+            <p><strong>Tel:</strong> 0990230465<br/><strong>Email:</strong> sove.eccpe@gmail.com</p>
+        </div>
+        <div class="bloque">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Ubicación Oficinas</h3>
+            <p>Esmeraldas, Ecuador<br/>LOCAL 1: Av. Olmedo entre Rocafuerte y Juan Montalvo</br> LOCAL 2: Av. Eloy Alfaro entre Mejias y Salinas </p>
+            <p><strong>Horario:</strong><br/>Lunes a Viernes: 08:00 - 17:00<br/></p>
+            <p><strong>Tel:</strong> 0990230465<br/><strong>Email:</strong>sindicatoobreros_volanteesmeraldas@hotmail.com</p>
+        </div>
+        <div class="bloque">
+            <i class="fas fa-school"></i>
+            <h3>Ubicación Aulas</h3>
+            <p> Av. Eloy Alfaro entre Mejias y Salinas<br/></p>
+            <p><strong>Horario:</strong><br/>Lunes a Viernes: 08:00 - 17:00<br/></p>
+        </div>
+    </div>
+    <div class="mapa-contacto" style="width: 100%;">
+        <iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.24891920117!2d-79.6540843!3d0.9680001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc01a38c8e4b%3A0xf6c68fe9cf29c463!2sSindivato%20De%20Choferes%20De%20Volqueta!5e0!3m2!1ses!2sec!4v1739137688206!5m2!1ses!2sec" style="border:0;" width="100%"></iframe>
+    </div>
+</section>
+<!-- Sección 8: Información + Servicios + Mapa -->
+<section class="seccion seccion-final">
+    <div class="col info">
+        <a href="index.html"><img alt="Logo SOVE" class="logo-footer grande" src="./img/icon-sove.eccpe.ico"/></a>
+        <p>Cada conductor profesional es un héroe anónimo en las rutas, responsable de transportar personas o mercancías con compromiso, seguridad y eficiencia.</p>
+        <p><i class="fa-solid fa-location-dot ubicacion-icono"></i> Av.Olmedo y Roca Fuerte, Esmeraldas - ECU</p>
+        <p class="telefono"><span class="telefono-hover"><i class="fas fa-phone"></i> <span class="contacto-label">¡Contáctanos hoy!</span><br/><span class="telefono-numero">1800-222-155</span></span></p>
+    </div>
+    <div class="col servicios">
+        <h3>SERVICIOS</h3>
+        <ul>
+            <li><a href="oferta.html">Cursos de Conducción de Autos</a></li>
+            <li><a href="oferta.html#psicosensometrico">Examen Psicosensométrico</a></li>
+            <li><a href="oferta.html">Curso de Recuperación de Puntos</a></li>
+        </ul>
+    </div>
+    <div class="col mapa">
+        <h3>ENCUÉNTRANOS EN:</h3>
+        <iframe allowfullscreen="" height="200" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.2485322107286!2d-79.654238!3d0.968329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc01a38c8e4b%3A0xf6c68fe9cf29c463!2sSindivato%20De%20Choferes%20De%20Volqueta!5e0!3m2!1ses!2sec!4v1739243174615!5m2!1ses!2sec" style="border:0;" width="100%"></iframe>
+    </div>
+</section>
+<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY === 0) {
+            navbar.classList.add("transparente");
+            navbar.style.top = "47px";
+        } else {
+            navbar.classList.remove("transparente");
+            navbar.style.top = "0";
+        }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const closeBtn = document.getElementById("close-menu");
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                document.body.classList.remove("menu-open");
+            });
+        }
+
+        const toggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const dropdown = document.querySelector(".dropdown");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+        });
+
+        dropdown.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle("active");
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hiddenBar = document.getElementById("hidden-bar");
+        const overlay = document.getElementById("overlay");
+        const openHiddenBar = document.getElementById("open-hidden-bar");
+        const closeHiddenBar = document.getElementById("close-hidden-bar");
+        const submenuToggle = document.querySelector(".submenu-toggle");
+
+        openHiddenBar.addEventListener("click", () => {
+            hiddenBar.classList.add("active");
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+
+        closeHiddenBar.addEventListener("click", () => {
+            hiddenBar.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+        });
+
+        overlay.addEventListener("click", () => {
+            hiddenBar.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+        });
+
+        submenuToggle.querySelector(".toggle-btn").addEventListener("click", () => {
+            submenuToggle.querySelector(".submenu").classList.toggle("active");
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const soveLink = document.querySelector(".sove-toggle");
+        const dropdownMenu = soveLink.nextElementSibling;
+        let isOpen = false;
+
+        soveLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            isOpen = !isOpen;
+            dropdownMenu.style.display = isOpen ? "block" : "none";
+        });
+
+        document.addEventListener("click", function (e) {
+            if (!soveLink.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = "none";
+                isOpen = false;
+            }
+        });
+    });
+</script>
+<script>
+    window.addEventListener("scroll", function () {
+        const hiddenBtn = document.getElementById("open-hidden-bar");
+        if (window.scrollY > 0) {
+            hiddenBtn.classList.add("con-sombra");
+        } else {
+            hiddenBtn.classList.remove("con-sombra");
+        }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function moveCarousel() {
+            currentIndex++;
+            if (currentIndex > totalCards - visibleCards) {
+                currentIndex = 0;
+            }
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        setInterval(moveCarousel, 3000);
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        const nextBtn = document.createElement('button');
+        const prevBtn = document.createElement('button');
+
+        nextBtn.innerHTML = '&#10095;';
+        prevBtn.innerHTML = '&#10094;';
+
+        nextBtn.classList.add('carousel-nav', 'next');
+        prevBtn.classList.add('carousel-nav', 'prev');
+
+        document.querySelector('.carousel-horizontal').appendChild(nextBtn);
+        document.querySelector('.carousel-horizontal').appendChild(prevBtn);
+
+        let currentIndex = 0;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function updateCarousel() {
+            if (currentIndex < 0) currentIndex = cards.length - visibleCards;
+            if (currentIndex > cards.length - visibleCards) currentIndex = 0;
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex--;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.ofertas-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:true,
+            navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+            items:4,
+            slideBy:1,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{ items:1 },
+                600:{ items:2 },
+                1000:{ items:4 }
+            }
+        });
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-links li a");
+    const currentPage = location.pathname.split('/').pop().toLowerCase();
+
+    links.forEach(link => {
+      const linkHref = link.getAttribute("href").split('/').pop().toLowerCase();
+      if (linkHref === currentPage) {
+        link.classList.add("activo");
+    }
+});
+});
+</script>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".carousel-container");
+        const items = document.querySelectorAll(".carousel-item");
+        const carouselBox = document.querySelector(".carousel-box");
+        let currentIndex = 0;
+        let interval;
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % items.length;
+            container.style.transform = `translateX(-${currentIndex * 320}px)`;
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            container.style.transform = `translateX(-${currentIndex * 320}px)`;
+        }
+
+        function startAutoScroll() {
+            interval = setInterval(showNext, 4000);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(interval);
+        }
+
+        startAutoScroll();
+
+        document.getElementById("next-btn").addEventListener("click", showNext);
+        document.getElementById("prev-btn").addEventListener("click", showPrev);
+
+        carouselBox.addEventListener("mouseenter", stopAutoScroll);
+        carouselBox.addEventListener("mouseleave", startAutoScroll);
+    });
+</script>
+<script src="script-carrusel.js"></script>
