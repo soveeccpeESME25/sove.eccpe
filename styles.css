@@ -2798,3 +2798,19 @@ img {
   height: auto;
   display: block;
 }
+
+/* === Fix extra para evitar marco blanco en contenedores clave === */
+@media (max-width: 768px) {
+  .cuerpo-principal,
+  .contenedor,
+  .caja,
+  .portada-carrusel {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  .carrusel-slide {
+    width: 100% !important;
+    flex-shrink: 0;
+  }
+}
