@@ -415,7 +415,7 @@ body {
 }
 
 .telefono-whatsapp:hover {
-    color: #0a962f;
+    color: #F05A28;
 }
 
 /* Imagen de portada en la sección de carrusel */
@@ -2822,7 +2822,7 @@ img {
   flex-wrap: wrap;
   width: 100%;
   min-height: 480px;
-  background-color: #1d2443;
+  background-color: #057D3B;
   color: white;
 }
 
@@ -2836,7 +2836,7 @@ img {
 }
 
 .mision-texto h2 {
-  color: #f7c600;
+  color: #057D3B;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -3180,7 +3180,7 @@ img {
 
 .tarjeta-superpuesta {
   position: absolute;
-  background: white;
+  background: white; /*Color de los cuadros pequeño*/
   padding: 30px;
   width: 300px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
@@ -3202,7 +3202,7 @@ img {
 .tarjeta-superpuesta h3 {
   font-size: 1.6em;
   margin-bottom: 12px;
-  color: #057D3B;
+  color: #057D3B;  
   font-weight: 700;
 }
 
@@ -3219,3 +3219,62 @@ img {
   font-weight: 600;
   text-decoration: none;
 }
+
+
+/* === INICIO ESTILOS SECCIÓN 5: SERVICIOS BRINDADOS === */
+.titulo-servicios {
+  text-align: center;
+  font-size: 3.4em;
+  margin: 40px auto 20px auto;
+  width: 100%;
+  display: block;
+}
+
+.verde-texto {
+  color: #0a962f !important;
+}
+
+.azul-texto {
+  color: #1d2443 !important;
+}
+
+.enlace-servicio {
+  text-decoration: none;
+  color: inherit;
+}
+/* === FIN ESTILOS SECCIÓN 5: SERVICIOS BRINDADOS === */
+
+
+/* === INICIO ESTILOS SECCIÓN 3: INFORMACIÓN TELEFÓNICA (ESTILO CELULAR) === */
+.info-celular {
+    background-color: #057D3B;
+    padding: 12px 0;
+    text-align: center;
+    position: relative;
+}
+
+.info-celular .contenedor-info {
+    display: inline-block;
+    background-color: #057D3B;
+    padding: 10px 30px;
+}
+
+.info-celular .titulo-info {
+    color: white;
+    margin: 0;
+}
+
+.info-celular .verde-info {
+    color: #1d2443;
+}
+
+.info-celular .decoracion-lateral {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #009b2e;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+}
+/* === FIN ESTILOS SECCIÓN 3: INFORMACIÓN TELEFÓNICA (ESTILO CELULAR) === */
