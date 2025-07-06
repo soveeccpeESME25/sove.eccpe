@@ -3083,3 +3083,139 @@ img {
     background-color: #FFD700;
     color: black;
 }
+
+/* === Sección 4.9: INICIATIVAS Y MISIÓN CON BORDES DESDE CSS === */
+.seccion-dividida-con-bordes {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  gap: 20px;
+  background-color: white;
+}
+
+.seccion-dividida-con-bordes .columna {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  border-top: 20px solid white;
+   border: 15px solid white;
+}
+
+.seccion-dividida-con-bordes .izquierda {
+  flex: 0 0 calc(40% - 20px);
+  background-image: url('img/cultura-1.jpg');
+}
+
+.seccion-dividida-con-bordes .derecha {
+  flex: 0 0 calc(60% - 10px);
+  background-image: url('img/cultura-2.png');
+}
+
+.caja-superpuesta {
+  position: absolute;
+  width: 300px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-top: 5px solid #0a962f;
+  border-bottom: 5px solid #0a962f;
+  border-radius: 10px;
+  color: #0a962f;
+}
+
+.izquierda .caja-superpuesta {
+  bottom: 20px;
+  left: 20px;
+}
+
+.derecha .caja-superpuesta {
+  top: 20px;
+  left: 20px;
+}
+
+.caja-superpuesta h3 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: #0a962f;
+}
+
+.caja-superpuesta p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #0a962f;
+}
+
+
+/* === Sección 4.9 - INICIATIVAS Y MISIÓN FINAL === */
+.seccion-dividida-final {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  gap: 20px;
+}
+
+.columna {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.izquierda-final {
+  flex: 0 0 calc(40% - 10px);
+  background-image: url('img/vision.png');
+}
+
+.derecha-final {
+  flex: 0 0 calc(60% - 10px);
+  background-image: url('img/cultura-2.png');
+}
+
+.tarjeta-superpuesta {
+  position: absolute;
+  background: white;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  border-top: 4px solid #057D3B;
+  border-radius: 4px;
+  color: #1A1A1A;
+}
+
+.izquierda-final .tarjeta-superpuesta {
+  bottom: 0px;
+  left: 20px;
+}
+
+.derecha-final .tarjeta-superpuesta {
+  top: 30px;
+  left: 20px;
+}
+
+.tarjeta-superpuesta h3 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #057D3B;
+  font-weight: 700;
+}
+
+.tarjeta-superpuesta p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #1A1A1A;
+}
+
+.tarjeta-superpuesta a {
+  margin-top: 20px;
+  display: inline-block;
+  color: #057D3B;
+  font-weight: 600;
+  text-decoration: none;
+}

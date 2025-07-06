@@ -156,6 +156,40 @@
   <div class="bienvenida-texto"><h2>Bienvenidos a S.O.V.E.</h2><p>En la Escuela de Capacitación para Conductores Profesionales de Esmeraldas (E.C.C.P.E), parte del Sindicato Obreros del Volante de Esmeraldas (S.O.V.E), nos enorgullece ofrecer programas de formación de alta calidad orientados al desarrollo profesional y responsable de nuevos conductores. Aquí encontrarás nuestras ofertas académicas diseñadas para brindarte todas las herramientas necesarias para convertirte en un conductor profesional altamente capacitado. </p></div><div class="bienvenida-imagen"><img alt="Vehículo SOVE" src="img/welcome-2.png"/></div>
   <div class="texto">
   </div></section>
+  
+  <!-- Sección 4.9: INICIATIVAS Y MISIÓN - DISEÑO FINAL -->
+<section class="seccion-dividida-final">
+  <div class="columna izquierda-final">
+    <div class="tarjeta-superpuesta">
+      <h3>Misión</h3>
+        <p>Formar conductores profesionales con valores éticos y morales con calidad, eficiencia y solidaridad, capacidad de Liderazgo y con finalidad de contribuir al desarrollo Integral de la patria y asegurar la supervivencia con apego a las normas, leyes y reglamentos de tránsito, transporte terrestre y seguridad vial.</p>
+
+      <a href="nosotros.html#mision-detalle">Leer más</a>
+
+    </div>
+  </div>
+  <div class="columna derecha-final">
+    <div class="tarjeta-superpuesta">
+      <h3>Visión</h3>
+      <p>Alcanzar una verdadera excelencia educativa en los nuevos conductores profesionales que sean proactivos, en concordancia del progreso de las técnicas y de las ciencias en base al permanente cultivo de valores con la aplicación de la ley orgánica de transporte terrestre, tránsito y seguridad vial.</p>
+      <a href="nosotros.html#vision-detalle">Leer más</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const hash = window.location.hash;
+    if (hash === '#mision-detalle') {
+      const seccion = document.querySelector(hash);
+      if (seccion) {
+        seccion.style.backgroundImage = 'none'; // Oculta la imagen
+        seccion.style.backgroundColor = '#E8F5EE'; // O aplica un fondo suave si deseas
+      }
+    }
+  });
+</script>
+
 
 <!-- Sección 5: Imagen circular con título y texto (Servicios Brindados) -->
 <section class="seccion servicios-rediseñados"><h2 class="fade-up" style="text-align:center; font-size:3.4em; margin:40px auto 20px auto; width: 100%; display: block;"><span style="color:#0a962f;">Servicios</span> <span style="color:#1d2443;">Brindados</span></h2><a href="nosotros.html" style="text-decoration: none; color: inherit;"><div class="servicio-box">
