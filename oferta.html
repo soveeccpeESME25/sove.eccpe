@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>SOVE — E.C.C.P.E</title>
+  <title>S.O.V.E — E.C.C.P.E</title>
   <link href="styles.css" rel="stylesheet"/>
-  <link href="./IMG/icon-web.ico" rel="icon" type="image/x-icon"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/icon-sove.eccpe.png">
+  <link href="img/icon-sove.eccpe.ico" rel="icon" type="image/x-icon"/>
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 </head>
+
 <body>
-<!-- Sección 1: Encabezado -->
+
+<!-- SECCION ENCABEZADO -->
+<!-- Barra Verded -->
 <section class="seccion cabecera-verde">
   <div class="col redes">
     <p><strong>Redes Sociales:</strong>
@@ -28,7 +33,9 @@
     <p><a class="correo-blanco" href="mailto:sove.eccpe@gmail.com"><i class="fas fa-envelope icono-correo"></i> sove.eccpe@gmail.com</a></p>
   </div>
 </section>
+
 <!-- NAVBAR PRINCIPAL -->
+<!-- MENU DE PC -->
 <header class="navbar transparente">
   <nav class="nav-container">
     <div class="nav-logo"><a href="index.html"><img alt="Logo SOVE" class="logo-navbar" src="img/SOVE_ECCPE.png"/></a></div>
@@ -55,7 +62,9 @@
     </div>
   </nav>
 </header>
+
 <!-- Menú Hidden-Bar -->
+<!-- MENU DE ANDROID/IOS -->
 <div class="hidden-bar" id="hidden-bar">
   <div class="hidden-bar-header">
     <div style="display: flex; align-items: center; gap: 10px;">
@@ -85,7 +94,8 @@
 </div>
 <div id="overlay"></div>
 <button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
-<!-- Sección 2: Imagen de portada con carrusel automático -->
+
+<!-- SECCION 1: CARRUSEL DE NOTICIAS  -->
 <section class="carrusel-fullscreen" id="portada-carrusel"><button class="carrusel-nav prev" id="carrusel-prev">❮</button><button class="carrusel-nav next" id="carrusel-next">❯</button>
   <div class="carrusel-slide" style="background-image: url('img/carrusel-1.jpg');">
     <div class="overlay"></div>
@@ -104,51 +114,18 @@
     </div>
   </div>
   <div class="carrusel-slide" style="background-image: url('img/carrusel-3.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Escuela de Capacitación para Conductores Profesionales de Esmeraldas.</h1><p>Formamos conductores profesionales con seguridad y excelencia.</p><div class="botonera"><a class="btn-verde" href="https://wa.me/593990230465" target="_blank">Únete</a><a class="btn-transparente" href="https://mail.sove.ec/moodle/login/index.php" target="_blank">Inicia Sesión</a></div></div></div><div class="carrusel-slide" style="background-image: url('img/carrusel-4.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Reglas claras, caminos seguros. ¡Conduce con nosotros!</h1></div></div><div class="carrusel-indicadores"><span class="indicador activo"></span><span class="indicador"></span><span class="indicador"></span><span class="indicador"></span></div></section>
-<!-- Sección 3: Imagen + Texto -->
+
+<!-- SECCION 2: BIENVENIDA  -->
 <section class="seccion seccion-welcome">
   <div class="bienvenida-texto"><h2>Bienvenidos a S.O.V.E.</h2><p>En la Escuela de Capacitación para Conductores Profesionales de Esmeraldas (E.C.C.P.E), parte del Sindicato Obreros del Volante de Esmeraldas (S.O.V.E), nos enorgullece ofrecer programas de formación de alta calidad orientados al desarrollo profesional y responsable de nuevos conductores. Aquí encontrarás nuestras ofertas académicas diseñadas para brindarte todas las herramientas necesarias para convertirte en un conductor profesional altamente capacitado. </p></div><div class="bienvenida-imagen"><img alt="Vehículo SOVE" src="img/welcome-2.png"/></div>
   <div class="texto">
   </div></section>
-<!-- Sección 4: Examen Psicosensométrico -->
+
+<!-- SECCION 3: Examen Psicosensométrico -->
 <section class="video-modern" id="psicosensometrico">
   <div class="video-box">
     <img alt="Equipo Psicosensométrico" src="img/examen-psicosensometrico.jpg" style="width:100%; height:auto; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"/>
-    <div class="tabs-box">
-      <div class="tabs" style="margin-top: 10px;">
-        <button class="tab-btn active" onclick="showTab('requisitos')"><i class="fas fa-info-circle"></i> Requisitos</button>
-        <button class="tab-btn" onclick="showTab('valor')"><i class="fas fa-hand-holding-usd"></i> Valor</button>
-      </div>
-      <div class="tab-content" id="requisitos" style="display: block; margin-top: 10px;">
-        <ul>
-          <li>Presentar cédula de ciudadanía o licencia de conducir original.</li>
-        </ul>
-      </div>
-      <div class="tab-content" id="valor" style="display: none; margin-top: 10px;">
-        <p><strong>INFORMACIÓN SOBRE LA EVALUACIÓN:</strong></p>
-        <ul>
-          <li>Costo: USD 20 (incluido IVA).</li>
-          <li>Vigencia: 60 días calendario.</li>
-          <li>Atención: De lunes a viernes de 9H00 a 18H00. Sábados de 9H00 a 13H00.</li>
-        </ul>
-      </div>
-    </div>
-    <script>
-      function showTab(tabId) {
-        document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(tabId).style.display = 'block';
-        event.currentTarget.classList.add('active');
-      }
-    </script>
   </div>
-  <script>
-    function showTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.getElementById(tabId).style.display = 'block';
-      event.currentTarget.classList.add('active');
-    }
-  </script>
   <div class="content-box">
     <h2>Examen Psicosensométrico</h2>
     <p>Para renovar la licencia de conducir de cualquier tipo o categoría, es requisito obligatorio aprobar una evaluación psicotécnica o psicosensométrica, la misma que permite diagnosticar las aptitudes psicomotrices del conductor.</p>
@@ -199,136 +176,218 @@
   };
 </script>
 </section>
-<!-- Sección 5: Tipos de licencia (9 cuadros) Ofertas Academicas-->
+
+<!-- SECCION 4: OFERTAS ACADEMICAS -->
 <h2 class="titulo-autoridades fade-up" style="color: #1d2443;">Ofertas Académicas</h2>
 <section class="seccion ofertas-cards fade-up">
-  <div class="flip-card" id="licencia-a1">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" style="background-image: url('img/OFA0.png');">
-        <div class="info-hover-card">
-          <div class="textos">
-            <small>Educación / Profesional</small>
-            <h3>Licencia Tipo A.1</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="requisitos">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>Licencia tipo A1</li>
-            <li>Experiencia escolar</li>
-            <li>Curso de transporte escolar</li>
-          </ul>
-          <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-A1.html">Ver más</a>
+
+<!-- Tarjeta/Carta tipo A1-A.1 -->
+<div class="flip-card" id="licencia-a1">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA0.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo A.1</h3>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flip-card" id="licencia-c">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" style="background-image: url('img/OFA1.png');">
-        <div class="info-hover-card">
-          <div class="textos">
-            <small>Educación / Profesional</small>
-            <h3>Licencia Tipo C</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="requisitos">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>Mayor de 18 años</li>
-            <li>Licencia tipo B vigente</li>
-            <li>Certificado médico</li>
-          </ul>
-          <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-C.html">Ver más</a>
-        </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Licencia tipo A1</li>
+          <li>Experiencia escolar</li>
+          <li>Curso de transporte escolar</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-A1.html">Ver más</a>
       </div>
     </div>
   </div>
-  <div class="flip-card" id="licencia-c1">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" style="background-image: url('img/OFA2.png');">
-        <div class="info-hover-card">
-          <div class="textos">
-            <small>Educación / Profesional</small>
-            <h3>Licencia Tipo C1</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="requisitos">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>Ser conductor profesional</li>
-            <li>Experiencia previa</li>
-            <li>Curso de primeros auxilios</li>
-          </ul>
-          <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-C1.html">Ver más</a>
+</div>
+
+<!-- Tarjeta/Carta tipo C -->
+<div class="flip-card" id="licencia-c">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA1.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo C</h3>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flip-card" id="licencia-d">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" style="background-image: url('img/OFA3.png');">
-        <div class="info-hover-card">
-          <div class="textos">
-            <small>Educación / Profesional</small>
-            <h3>Licencia Tipo D</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="requisitos">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>Licencia C vigente</li>
-            <li>3 años de experiencia</li>
-            <li>Antecedentes penales</li>
-          </ul>
-          <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-D.html">Ver más</a>
-        </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Mayor de 18 años</li>
+          <li>Licencia tipo B vigente</li>
+          <li>Certificado médico</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-C.html">Ver más</a>
       </div>
     </div>
   </div>
-  <div class="flip-card" id="licencia-e">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" style="background-image: url('img/OFA5.png');">
-        <div class="info-hover-card">
-          <div class="textos">
-            <small>Educación / Profesional</small>
-            <h3>Licencia Tipo E</h3>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="requisitos">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>Licencia tipo C o D</li>
-            <li>Curso de manejo pesado</li>
-            <li>Examen psicológico</li>
-          </ul>
-          <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-E.html">Ver más</a>
+</div>
+
+<!-- Tarjeta/Carta tipo C1/C.1 -->
+<div class="flip-card" id="licencia-c1">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA2.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo C1</h3>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flip-card-back">
-    <div class="requisitos">
-      <h4>Requisitos</h4>
-      <ul>
-        <li>Ser mayor de edad</li>
-        <li>Tener licencia tipo B</li>
-        <li>Certificado médico</li>
-      </ul>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Ser conductor profesional</li>
+          <li>Experiencia previa</li>
+          <li>Curso de primeros auxilios</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-C1.html">Ver más</a>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- Tarjeta/Carta tipo D -->
+<div class="flip-card" id="licencia-d">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA3.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo D</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Licencia C vigente</li>
+          <li>3 años de experiencia</li>
+          <li>Antecedentes penales</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-D.html">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tarjeta/Carta tipo E -->
+<div class="flip-card" id="licencia-e">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA5.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo E</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Licencia tipo C o D</li>
+          <li>Curso de manejo pesado</li>
+          <li>Examen psicológico</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-E.html">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flip-card-back">
+  <div class="requisitos">
+    <h4>Requisitos</h4>
+    <ul>
+      <li>Ser mayor de edad</li>
+      <li>Tener licencia tipo B</li>
+      <li>Certificado médico</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Tarjeta/Carta tipo E Regular -->
+<div class="flip-card" id="licencia-er">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA7.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo E Regular</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Licencia tipo C o D</li>
+          <li>Curso de manejo pesado</li>
+          <li>Examen psicológico</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-E.html">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flip-card-back">
+  <div class="requisitos">
+    <h4>Requisitos</h4>
+    <ul>
+      <li>Ser mayor de edad</li>
+      <li>Tener licencia tipo B</li>
+      <li>Certificado médico</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Tarjeta/Carta tipo E Convalidado -->
+<div class="flip-card" id="licencia-ec">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="background-image: url('img/OFA8.png');">
+      <div class="info-hover-card">
+        <div class="textos">
+          <small>Educación / Profesional</small>
+          <h3>Licencia Tipo E - Convalidado</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="requisitos">
+        <h4>Requisitos</h4>
+        <ul>
+          <li>Licencia tipo C o D</li>
+          <li>Curso de manejo pesado</li>
+          <li>Examen psicológico</li>
+        </ul>
+        <a class="btn-vermas-blanco" href="Tipos-de-Licencia/Licencia-E.html">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flip-card-back">
+  <div class="requisitos">
+    <h4>Requisitos</h4>
+    <ul>
+      <li>Ser mayor de edad</li>
+      <li>Tener licencia tipo B</li>
+      <li>Certificado médico</li>
+    </ul>
+  </div>
+</div>
 </section>
-<!-- Sección 6: Capacitación Adicional -->
+
+<!-- SECCION 4: Capacitación Adicional -->
 <section class="adicional fade-up">
   <div class="contenedor-titulo">
     <h2 class="titulo-autoridades" style="color:#1d2443;">Capacitación Adicional</h2>
@@ -364,7 +423,8 @@
     </div>
   </div>
 </section>
-<!-- Sección 8: Información + Servicios + Mapa -->
+
+<!-- SECCION PIE DE PAGINA -->
 <section class="seccion seccion-final">
   <div class="col info">
     <a href="index.html"><img alt="Logo SOVE" class="logo-footer grande" src="./img/icon-sove.eccpe.ico"/></a>
