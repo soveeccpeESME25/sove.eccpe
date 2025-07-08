@@ -97,27 +97,6 @@
 <div id="overlay"></div>
 <button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
 
-<!-- Sección 2: Imagen de portada con carrusel automático 
-<section class="carrusel-fullscreen" id="portada-carrusel"><button class="carrusel-nav prev" id="carrusel-prev">❮</button><button class="carrusel-nav next" id="carrusel-next">❯</button>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-1.jpg');">
-        <div class="overlay"></div>
-        <div class="contenido-carrusel">
-            <h1>Bienvenidos a S.O.V.E.</h1>
-            <p>Capacitación Profesional con Calidad</p>
-            <a class="btn-verde" href="nosotros.html">Conócenos</a>
-        </div>
-    </div>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-2.jpg'); display: none;">
-        <div class="overlay"></div>
-        <div class="contenido-carrusel">
-            <h1>Tu Futuro Sobre Ruedas</h1>
-            <p>Licencias Profesionales para un mejor mañana</p>
-            <a class="btn-verde" href="oferta.html?licencia=d">Ver oferta</a>
-        </div>
-    </div>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-3.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Escuela de Capacitación para Conductores Profesionales de Esmeraldas.</h1><p>Formamos conductores profesionales con seguridad y excelencia.</p><div class="botonera"><a class="btn-verde" href="https://wa.me/593990230465" target="_blank">Únete</a><a class="btn-transparente" href="https://mail.sove.ec/moodle/login/index.php" target="_blank">Inicia Sesión</a></div></div></div><div class="carrusel-slide" style="background-image: url('img/carrusel-4.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Reglas claras, caminos seguros. ¡Conduce con nosotros!</h1></div></div><div class="carrusel-indicadores"><span class="indicador activo"></span><span class="indicador"></span><span class="indicador"></span><span class="indicador"></span></div></section>
--->
-
 <!-- SECCION 1: PORTADA PRINCIPAL ESTILO PARALLAX  -->
 <section class="portada-principal-parallax">
     <div class="contenido-portada-principal">
@@ -144,9 +123,9 @@
   <div class="mision-texto">
     <h2>Formación de calidad</h2>
     <p>
-       La Escuela de Conducción de Esmeraldas ha brindado enseñanza con enfoque en responsabilidad, seguridad y motivación. Estamos donde nos necesites, ¡únete hoy mismo!
-   </p>
-   <a href="transparencia.html" class="btn-vermas-blanco">Ver eventos</a>
+     La Escuela de Conducción de Esmeraldas ha brindado enseñanza con enfoque en responsabilidad, seguridad y motivación. Estamos donde nos necesites, ¡únete hoy mismo!
+ </p>
+ <a href="transparencia.html" class="btn-vermas-blanco">Ver eventos</a>
 
 </div>
 <div class="mision-video">
@@ -203,34 +182,113 @@
     </div></a>
 </section>
 
-  <!-- SECCION 7: OFERTAS CARRUSEL -->
+<!-- SECCION 7: OFERTAS CARRUSEL -->
+<section class="nuevo-carrusel moderno">
+<!-- SECCION : NUEVO CARRUSEL -->
   <h2 class="titulo-autoridades fade-up" style="color: #1d2443;">Ofertas Académicas</h2>
-  <section class="ofertas-academicas">
-    <div class="owl-carousel ofertas-carousel">
-        <a href="oferta.html?licencia=a1" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA0.png" alt="Licencia Tipo A1"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo A1</h3><span class="flecha-hover">→</span></div></div></a>
-        <a href="oferta.html?licencia=c" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA1.png" alt="Licencia Tipo C"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo C</h3><span class="flecha-hover">→</span></div></div></a>
-        <a href="oferta.html?licencia=c1" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA2.png" alt="Licencia Tipo C1"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo C1</h3><span class="flecha-hover">→</span></div></div></a>
-        <a href="oferta.html?licencia=d" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA3.png" alt="Licencia Tipo D"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo D</h3><span class="flecha-hover">→</span></div></div></a>
-        <a href="oferta.html?licencia=e"  style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA5.png" alt="Licencia Tipo E"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo E</h3><span class="flecha-hover">→</span></div></div></a>
+  <div class="carrusel-interactivo owl-carousel" id="carruselInteractivo">
+
+    <!-- Tarjeta/Carta tipo A1-A.1 -->
+    <a href="oferta.html?licencia=a1" style="text-decoration: none; color: inherit;">
+      <div class="slide-carta">
+        <img src="img/OFA0.png" alt="Tipo A1" />
+        <div class="overlay">
+          <div class="info">
+            <span>Licencia Profesional</span>
+            <h3>Tipo A1</h3>
+        </div>
+        <div class="icono">&#10132;</div>
     </div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo C -->
+<a href="oferta.html?licencia=c" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA1.png" alt="Tipo C" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo C</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo C1/C.1 -->
+<a href="oferta.html?licencia=c1" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA2.png" alt="Tipo C1" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo C1</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo D -->
+<a href="oferta.html?licencia=d" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA3.png" alt="Tipo D" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo D</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E -->
+<a href="oferta.html?licencia=e" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA5.png" alt="Tipo E" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E Regular -->
+<a href="oferta.html?licencia=er" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA7.png" alt="Tipo E Regular" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E - Regular</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E Convalidado -->
+<a href="oferta.html?licencia=ec" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA8.png" alt="Tipo E Convalidando" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E - Convalidando</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+</div>
 </section>
 
-<!-- Sección 4: Video y texto 
-<section class="seccion video-modern fade-up">
-    <div class="video-box">
-        <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/T9sMl3gMV0Y"></iframe>
-    </div>
-    <div class="content-box">
-        <h2></h2>
-        <p>Desde 20XX, la Escuela de Conducción de Esmeraldas ha brindado enseñanza con enfoque en responsabilidad, seguridad y motivación. Estamos donde nos necesites, ¡únete hoy mismo!</p>
-        <ul class="icon-list">
-            <li><i class="fas fa-check-circle"></i> Instructores certificados</li>
-            <li><i class="fas fa-check-circle"></i> Clases teóricas y prácticas</li>
-            <li><i class="fas fa-check-circle"></i> Enfoque personalizado</li>
-        </ul>
-        <a class="btn-verde" href="nosotros.html">Ver más</a>
-    </div>
-</section>-->
 
 <!-- SECCION 8: COMITE EJECUTIVO-->
 <section class="green-committee">
@@ -692,6 +750,79 @@
 </script>
 <!-- === SCRIPT SIN DESCRIPCIÓN === -->
 <script src="script-carrusel.js"></script>
+
+<!-- SCRIPT: NUEVO CARRUSEL -->
+<script>
+  function moverNuevoCarrusel(direccion) {
+    const carrusel = document.getElementById("carruselNuevo");
+    const scrollCantidad = 250;
+    carrusel.scrollBy({ left: direccion * scrollCantidad, behavior: 'smooth' });
+}
+</script>
+
+
+<!-- SCRIPT: NUEVO CARRUSEL FUNCIONAL -->
+<script>
+  function moverNuevoCarrusel(direccion) {
+    const carrusel = document.getElementById("nuevoCarrusel");
+    const desplazamiento = 250;
+    carrusel.scrollBy({ left: direccion * desplazamiento, behavior: 'smooth' });
+}
+</script>
+
+
+<!-- SCRIPT CARRUSEL INTERACTIVO -->
+<script>
+  const carrusel = document.getElementById('carruselInteractivo');
+  let isDown = false;
+  let startX, scrollLeft;
+
+  carrusel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carrusel.classList.add('active');
+    startX = e.pageX - carrusel.offsetLeft;
+    scrollLeft = carrusel.scrollLeft;
+});
+  carrusel.addEventListener('mouseleave', () => {
+    isDown = false;
+    carrusel.classList.remove('active');
+});
+  carrusel.addEventListener('mouseup', () => {
+    isDown = false;
+    carrusel.classList.remove('active');
+});
+  carrusel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carrusel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carrusel.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+
+<!-- === SCRIPT: CONFIGURACIÓN CARRUSEL DE OFERTAS CON OWL === -->
+<script>
+$(document).ready(function(){
+    $('#carruselInteractivo').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:true,
+        navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+        items:4,
+        slideBy:1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{ items:1 },
+            600:{ items:2 },
+            1000:{ items:4 }
+        }
+    });
+});
+</script>
+
 </body>
 </html>
 
