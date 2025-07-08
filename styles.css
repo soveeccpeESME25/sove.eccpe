@@ -3299,7 +3299,8 @@ img {
 .slide-carta {
   position: relative;
   min-width: 250px;
-  height: 330px;
+  aspect-ratio: 1 / 1;
+  height: auto;
   border-radius: 12px;
   overflow: hidden;
   flex-shrink: 0;
@@ -3362,17 +3363,19 @@ img {
     display: none;                  /* ← Chrome, Safari */
 }
 
+/* === INICIO AJUSTES RESPONSIVOS PARA CARRUSEL INTERACTIVO === */
+@media (max-width: 768px) {
+  #carruselInteractivo .slide-carta {
+    min-width: 220px;
+    aspect-ratio: 1 / 1;
+  }
+}
+/* === FIN AJUSTES RESPONSIVOS PARA CARRUSEL INTERACTIVO === */
+
 /* === INICIO AJUSTE: OCULTAR FLECHAS DEL CARRUSEL INTERACTIVO DE LA SECCIÓN 7 === */
-#carruselInteractivo .owl-nav {
+#carruselInteractivo .owl-nav,
+#carruselInteractivo .owl-prev,
+#carruselInteractivo .owl-next {
   display: none !important;
 }
 /* === FIN AJUSTE: OCULTAR FLECHAS DEL CARRUSEL INTERACTIVO DE LA SECCIÓN 7 === */
-
-/* === INICIO AJUSTE: CORREGIR ESCALA DE IMÁGENES EN CARRUSEL INTERACTIVO === */
-#carruselInteractivo .slide-carta img {
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  padding: 10px;
-}
-/* === FIN AJUSTE: CORREGIR ESCALA DE IMÁGENES EN CARRUSEL INTERACTIVO === */
