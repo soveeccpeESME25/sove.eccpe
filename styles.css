@@ -1133,10 +1133,10 @@ body {
     animation: none;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-  }
-  .carousel-item {
+}
+.carousel-item {
     scroll-snap-align: center;
-  }
+}
 }
 
 .carousel-box {
@@ -1190,7 +1190,7 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 }
 
 
@@ -1395,7 +1395,7 @@ body {
 }
 
 .carrusel-nav:hover {
-    
+
 }
 
 .carrusel-nav:hover {
@@ -1817,108 +1817,108 @@ body {
   perspective: 1000px;
 
   margin: 15px;}
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-
-  backdrop-filter: blur(8px);
-  background-color: rgba(10, 150, 47, 0.85);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.flip-card-front {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  padding: 16px;
-}
-.flip-card-front .info-hover-card {
-  background: white;
-  padding: 12px;
-  width: 100%;
-}
-.flip-card-back {
-  background-color: #0a962f;
-  color: white;
-  transform: rotateY(180deg);
-  padding: 20px;
-
-  backdrop-filter: blur(8px);
-  background-color: rgba(10, 150, 47, 0.85);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.flip-card-back .requisitos h4 {
-  margin-top: 0;
-}
-.flip-card-back .requisitos ul {
-  padding-left: 20px;
-}
-.flip-card-back .requisitos li {
-  margin-bottom: 8px;
-}
-
-
-@media (max-width: 768px) {
-  .flip-card {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
-  }
-
   .flip-card-inner {
-    height: auto;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+
+      backdrop-filter: blur(8px);
+      background-color: rgba(10, 150, 47, 0.85);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      padding: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+  }
+  .flip-card-front {
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+  }
+  .flip-card-front .info-hover-card {
+      background: white;
+      padding: 12px;
+      width: 100%;
+  }
+  .flip-card-back {
+      background-color: #0a962f;
+      color: white;
+      transform: rotateY(180deg);
+      padding: 20px;
+
+      backdrop-filter: blur(8px);
+      background-color: rgba(10, 150, 47, 0.85);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      padding: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+  }
+  .flip-card-back .requisitos h4 {
+      margin-top: 0;
+  }
+  .flip-card-back .requisitos ul {
+      padding-left: 20px;
+  }
+  .flip-card-back .requisitos li {
+      margin-bottom: 8px;
   }
 
-  .flip-card-front, .flip-card-back {
-    height: 300px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
+
+  @media (max-width: 768px) {
+      .flip-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .flip-card-inner {
+        height: auto;
+    }
+
+    .flip-card-front, .flip-card-back {
+        height: 300px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        padding: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 480px) {
   .flip-card-back .requisitos h4 {
     font-size: 1.1em;
-  }
-  .flip-card-back .requisitos li {
+}
+.flip-card-back .requisitos li {
     font-size: 0.95em;
-  }
+}
 }
 
 
@@ -2320,11 +2320,11 @@ body {
   from {
     opacity: 0;
     transform: scale(0.9);
-  }
-  to {
+}
+to {
     opacity: 1;
     transform: scale(1);
-  }
+}
 }
 
 
@@ -2404,17 +2404,17 @@ body {
   .eventos {
     flex-direction: column;
     text-align: center;
-  }
+}
 
-  .eventos-imagenes {
+.eventos-imagenes {
     justify-content: center;
-  }
+}
 
-  .eventos-imagenes img {
+.eventos-imagenes img {
     width: 100%;
     max-width: 320px;
     height: auto;
-  }
+}
 }
 
 
@@ -2475,13 +2475,13 @@ body {
   .parallax-custom {
     background-attachment: scroll;
     padding: 80px 20px;
-  }
-  .parallax-custom h2 {
+}
+.parallax-custom h2 {
     font-size: 1.8em;
-  }
-  .parallax-custom p {
+}
+.parallax-custom p {
     font-size: 1em;
-  }
+}
 }
 
 
@@ -2510,8 +2510,8 @@ body {
 
 .seccion-dividida .parte-inferior {
     height: 700px;
-  background: linear-gradient(to bottom, white 50%, #0a962f 50%);
-  color: black;
+    background: linear-gradient(to bottom, white 50%, #0a962f 50%);
+    color: black;
 }
 
 @media (max-width: 768px) {
@@ -2519,7 +2519,7 @@ body {
   .seccion-dividida .parte-inferior {
     height: 150px;
     padding: 20px;
-  }
+}
 }
 
 .parte-superior .contenido-texto {
@@ -2577,7 +2577,7 @@ body {
   .collage {
     flex-direction: column;
     align-items: center;
-  }
+}
 }
 
 .seccion-dividida .parte-superior {
@@ -2619,22 +2619,22 @@ body {
 
 @media (max-width: 768px) {
   .collage-nuevo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 0;
-  margin-top: -180px;
-  z-index: 20;
-}
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 0;
+      margin-top: -180px;
+      z-index: 20;
+  }
 
   .subseccion-derecha img {
-  width: 320px;
-  height: 580px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
+      width: 320px;
+      height: 580px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
 }
 
 .contenedor-dos-columnas {
@@ -2683,7 +2683,7 @@ body {
   .seccion-dividida-alt .parte-inferior-alt {
     height: 150px;
     padding: 20px;
-  }
+}
 }
 
 .parte-superior-alt .contenido-texto-alt {
@@ -2774,12 +2774,12 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: -180px;
-  }
+}
 
-  .subseccion-derecha-alt img {
+.subseccion-derecha-alt img {
     width: 320px;
     height: 580px;
-  }
+}
 }
 
 /* === Protección global contra scroll lateral y desbordes === */
@@ -2807,12 +2807,12 @@ img {
   .portada-carrusel {
     width: 100% !important;
     overflow-x: hidden;
-  }
+}
 
-  .carrusel-slide {
+.carrusel-slide {
     width: 100% !important;
     flex-shrink: 0;
-  }
+}
 }
 
 
@@ -2863,17 +2863,17 @@ img {
 @media (max-width: 768px) {
   .mision-sove {
     flex-direction: column;
-  }
+}
 
-  .mision-texto,
-  .mision-video {
+.mision-texto,
+.mision-video {
     flex: 1 1 100%;
     padding: 30px 20px;
-  }
+}
 
-  .mision-texto h2 {
+.mision-texto h2 {
     font-size: 2em;
-  }
+}
 }
 
 
@@ -3018,17 +3018,17 @@ img {
 @media (max-width: 768px) {
   .admision-cuotas {
     flex-direction: column;
-  }
+}
 
-  .admision-texto,
-  .admision-imagen {
+.admision-texto,
+.admision-imagen {
     flex: 1 1 100%;
     padding: 30px 20px;
-  }
+}
 
-  .admision-texto h2 {
+.admision-texto h2 {
     font-size: 2em;
-  }
+}
 }
 
 /* === PORTADA PARALLAX PRINCIPAL === */
@@ -3102,7 +3102,7 @@ img {
   background-size: cover;
   background-position: center;
   border-top: 20px solid white;
-   border: 15px solid white;
+  border: 15px solid white;
 }
 
 .seccion-dividida-con-bordes .izquierda {
@@ -3368,7 +3368,7 @@ img {
   #carruselInteractivo .slide-carta {
     min-width: 220px;
     aspect-ratio: 1 / 1;
-  }
+}
 }
 /* === FIN AJUSTES RESPONSIVOS PARA CARRUSEL INTERACTIVO === */
 
@@ -3423,144 +3423,150 @@ img {
 }
 /* === FIN ESTILOS SECCIÓN: Campaña de Seguridad Vial === */
 
-/* === INICIO ESTILOS LIGHTBOX CAMPAÑA SEGURIDAD VIAL === */
-.lightbox-vial {
+
+/* === INICIO NUEVO LIGHTBOX MODERNIZADO TIPO INSTAGRAM === */
+.lightbox-vial-modernizado {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 10, 10, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
 }
 
-.lightbox-vial.activo {
+.lightbox-vial-content-modernizado {
   display: flex;
+  max-width: 90%;
+  max-height: 90%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  flex-direction: row;
 }
 
-.lightbox-vial-content {
-  display: flex;
-  background: #fff;
-  padding: 30px;
+.lightbox-img-container {
+  aspect-ratio: 1 / 1;
+  width: 100%;
   max-width: 900px;
-  width: 90%;
-  border-radius: 12px;
-  position: relative;
-  gap: 30px;
+  background: black;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .lightbox-img-container img {
-  max-width: 400px;
-  max-height: 500px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 0;
 }
 
 .lightbox-texto {
-  flex: 1;
-  text-align: left;
+  width: 350px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.lightbox-texto p {
-  font-size: 1.1em;
-  color: #1A1A1A;
+.lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.logo-lightbox {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.nombre-escuela {
+  font-size: 11px; /* Ajusta el tamaño según tu gusto */
+  font-weight: bold;
+  color: #057D3B; /* Verde institucional */
+  display: inline-block;
+  margin-left: 8px;
 }
 
 .cerrar-lightbox {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 2.2em;
-  color: #057D3B;
-  cursor: pointer;
+  top: 20px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 26px;
+  color: #F05A28; /* naranja institucional */
   font-weight: bold;
-}
-/* === FIN ESTILOS LIGHTBOX CAMPAÑA SEGURIDAD VIAL === */
-
-
-/* === INICIO ESTILOS LIGHTBOX MODERNO (INSTAGRAM STYLE) === */
-.lightbox-vial-moderno {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 15, 15, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  overflow-y: auto;
-}
-
-.lightbox-vial-content-moderno {
-  display: flex;
-  flex-direction: row;
-  background: none;
-  max-width: 90%;
-  max-height: 90%;
-  gap: 30px;
-}
-
-.lightbox-vial-img-wrapper {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 10001;
 }
 
-.lightbox-vial-img-wrapper img {
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.lightbox-vial-info {
-  flex: 0 0 300px;
+.cerrar-lightbox:hover {
+  background-color: #F05A28;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
+  transform: scale(1.1);
 }
 
 .descripcion-lightbox {
-  max-height: 80vh;
-  overflow-y: auto;
-  font-size: 0.95em;
-  padding-right: 10px;
+  font-size: 16px;
+  color: #333;
 }
 
-.cerrar-lightbox-moderno {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  color: white;
-  font-size: 1.8em;
-  border: none;
-  cursor: pointer;
+.fecha-lightbox {
+  margin-top: auto;
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+/* === FIN NUEVO LIGHTBOX MODERNIZADO TIPO INSTAGRAM === */
+
+
+/* === AJUSTE VISUAL: UNIFICAR BORDES REDONDEADOS === */
+.lightbox-vial-content-modernizado {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.lightbox-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
 }
 
 @media (max-width: 768px) {
-  .lightbox-vial-content-moderno {
+  .lightbox-vial-content-modernizado {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .lightbox-vial-info {
-    flex: none;
-    width: 100%;
-    padding: 15px;
-  }
 }
-/* === FIN ESTILOS LIGHTBOX MODERNO (INSTAGRAM STYLE) === */
+
+.lightbox-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.lightbox-texto {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+}
+/* === FIN AJUSTE VISUAL: UNIFICAR BORDES REDONDEADOS === */
+

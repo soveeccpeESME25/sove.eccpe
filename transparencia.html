@@ -426,6 +426,57 @@
 });
 </script>
 <script src="lightbox.js"></script>
+
+<!-- === INICIO NUEVO LIGHTBOX MODERNIZADO TIPO INSTAGRAM === -->
+<div class="lightbox-vial-modernizado" id="lightbox-vial" style="display: none;">
+  <button class="cerrar-lightbox" onclick="cerrarLightbox()">×</button> <!-- Mover aquí -->
+  <div class="lightbox-vial-content-modernizado">
+    <div class="lightbox-img-container">
+      <img alt="Imagen ampliada" id="lightbox-vial-img" src=""/>
+    </div>
+    <div class="lightbox-texto">
+      <div class="lightbox-header">
+        <img src="img/SOVE_ECCPE.png" alt="Logo" class="logo-lightbox"/>
+        <span class="nombre-escuela">Escuela de Capacitación para Conductores Profesionales de Esmeraldas</span>
+      </div>
+      <p class="descripcion-lightbox" id="lightbox-vial-desc">Promoviendo una cultura vial responsable y consciente</p>
+      <p class="fecha-lightbox">9 de julio de 2025</p>
+    </div>
+  </div>
+</div>
+<!-- === FIN NUEVO LIGHTBOX MODERNIZADO TIPO INSTAGRAM === -->
+
+
+
+<script>
+  function abrirLightbox(src) {
+    const lightbox = document.getElementById("lightbox-vial");
+    const imgElement = document.getElementById("lightbox-vial-img");
+    const descElement = document.getElementById("lightbox-vial-desc");
+
+    const descripcion = "Promoviendo una cultura vial responsable y consciente";
+
+    if (lightbox && imgElement && descElement) {
+      imgElement.src = src;
+      descElement.textContent = descripcion;
+      lightbox.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  function cerrarLightbox() {
+    const lightbox = document.getElementById("lightbox-vial");
+    if (lightbox) {
+      lightbox.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") cerrarLightbox();
+  });
+</script>
+
 </body>
 </html>
 <script>
@@ -494,43 +545,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
-<!-- Lightbox Moderno - Estilo Instagram -->
-<div class="lightbox-vial-moderno" id="lightbox-vial" style="display: none;">
-<div class="lightbox-vial-content-moderno">
-<div class="lightbox-vial-img-wrapper">
-<img alt="Imagen ampliada" id="lightbox-vial-img" src=""/>
-</div>
-<div class="lightbox-vial-info">
-<button class="cerrar-lightbox-moderno" onclick="cerrarLightbox()">×</button>
-<div class="descripcion-lightbox">
-<p id="lightbox-vial-desc"></p>
-</div>
-</div>
-</div>
-</div>
-<script>
-  function abrirLightbox(src, descripcion) {
-    const lightbox = document.getElementById("lightbox-vial");
-    const lightboxImg = document.getElementById("lightbox-vial-img");
-    const lightboxDesc = document.getElementById("lightbox-vial-desc");
 
-    if (lightbox && lightboxImg && lightboxDesc) {
-      lightboxImg.src = src;
-      lightboxDesc.textContent = descripcion;
-      lightbox.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
-  }
-
-  function cerrarLightbox() {
-    const lightbox = document.getElementById("lightbox-vial");
-    if (lightbox) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  }
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") cerrarLightbox();
-  });
-</script>
