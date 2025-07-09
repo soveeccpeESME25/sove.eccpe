@@ -3379,3 +3379,188 @@ img {
   display: none !important;
 }
 /* === FIN AJUSTE: OCULTAR FLECHAS DEL CARRUSEL INTERACTIVO DE LA SECCIÓN 7 === */
+
+/* === INICIO ESTILOS SECCIÓN: Campaña de Seguridad Vial === */
+.galeria-seguridad-vial {
+  background-color: #E8F5EE;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.galeria-titulo h2 {
+  font-size: 2.8em;
+  color: #057D3B;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.galeria-titulo p {
+  font-size: 1.2em;
+  color: #1A1A1A;
+  margin-bottom: 50px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.03);
+}
+/* === FIN ESTILOS SECCIÓN: Campaña de Seguridad Vial === */
+
+/* === INICIO ESTILOS LIGHTBOX CAMPAÑA SEGURIDAD VIAL === */
+.lightbox-vial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lightbox-vial.activo {
+  display: flex;
+}
+
+.lightbox-vial-content {
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 12px;
+  position: relative;
+  gap: 30px;
+  align-items: center;
+}
+
+.lightbox-img-container img {
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.lightbox-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.lightbox-texto p {
+  font-size: 1.1em;
+  color: #1A1A1A;
+}
+
+.cerrar-lightbox {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2.2em;
+  color: #057D3B;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* === FIN ESTILOS LIGHTBOX CAMPAÑA SEGURIDAD VIAL === */
+
+
+/* === INICIO ESTILOS LIGHTBOX MODERNO (INSTAGRAM STYLE) === */
+.lightbox-vial-moderno {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.lightbox-vial-content-moderno {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  max-width: 90%;
+  max-height: 90%;
+  gap: 30px;
+}
+
+.lightbox-vial-img-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-vial-img-wrapper img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.lightbox-vial-info {
+  flex: 0 0 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.descripcion-lightbox {
+  max-height: 80vh;
+  overflow-y: auto;
+  font-size: 0.95em;
+  padding-right: 10px;
+}
+
+.cerrar-lightbox-moderno {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  font-size: 1.8em;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .lightbox-vial-content-moderno {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lightbox-vial-info {
+    flex: none;
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* === FIN ESTILOS LIGHTBOX MODERNO (INSTAGRAM STYLE) === */
