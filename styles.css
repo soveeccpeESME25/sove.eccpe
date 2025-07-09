@@ -3450,13 +3450,14 @@ img {
 }
 
 .lightbox-img-container {
-  aspect-ratio: 1 / 1;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
+  aspect-ratio: 1 / 1;
   background: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .lightbox-img-container img {
