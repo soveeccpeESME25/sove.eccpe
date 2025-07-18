@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>S.O.V.E — E.C.C.P.E</title>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon-sove.eccpe.png">
+    <link href="img/icon-sove.eccpe.ico" rel="icon" type="image/x-icon"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+</head>
+
+<body>
+
+<!-- SECCION ENCABEZADO -->
+<!-- Barra Verded -->
+<section class="seccion cabecera-verde">
+    <div class="col redes">
+        <p><strong>Redes Sociales:</strong>
+            <a class="icon-circle" href="https://www.facebook.com/share/16D8nrnwRR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon-circle" href="https://wa.me/593990230465" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </p>
+    </div>
+    <div class="col titulo-centro">
+        <h2>Escuela de Capacitación para Conductores Profesionales de Esmeraldas</h2>
+        <p>Sindicato Obreros del Volante de Esmeraldas</p>
+    </div>
+    <div class="col correo" style="text-align: right;">
+        <p><a class="correo-blanco" href="mailto:sove.eccpe@gmail.com"><i class="fas fa-envelope icono-correo"></i> sove.eccpe@gmail.com</a></p>
+    </div>
+</section>
+
+<!-- NAVBAR PRINCIPAL -->
+<!-- MENU DE PC -->
+<header class="navbar transparente">
+    <nav class="nav-container">
+        <div class="nav-logo"><a href="index.html"><img alt="Logo SOVE" class="logo-navbar" src="img/SOVE_ECCPE.png"/></a></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links right">
+                <li><a href="index.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a class="verde sove-toggle" href="#">S.O.V.E. ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="autoridades.html">Autoridades</a></li>
+                        <li><a href="transparencia.html">Eventos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Marco Legal</a></li>
+                        <li> <a href="https://drive.google.com/file/d/1kY9H4NSQLBHBdLx3G8VhyV2xz1ulZbFn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Reglamento Interno</a></li>
+                    </ul>
+                </li>
+                <li><a href="oferta.html">OFERTAS ACADÉMICAS </a></li>
+                <li><a href="https://mail.sove.ec/moodle/login/index.php">ENTORNO VIRTUAL</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Menú Hidden-Bar -->
+<!-- MENU DE ANDROID/IOS -->
+<div class="hidden-bar" id="hidden-bar">
+    <div class="hidden-bar-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img alt="Logo SOVE" src="img/SOVE_ECCPE.png" style="height: 55px;"/>
+        </div>
+        <button id="close-hidden-bar" style="background: none; border: none; font-size: 1.8em; color: white;">×</button>
+    </div>
+    <nav class="hidden-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu-toggle">
+                <span class="menu-item">S.O.V.E. <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button></span>
+                <ul class="submenu">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="autoridades.html">Autoridades</a></li>
+                    <li><a href="transparencia.html">Eventos</a></li>
+                    <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" target="_blank" rel="noopener noreferrer" >Marco Legal</a></li>
+                    <li><a href="reglamento.html">Reglamento Interno</a></li>
+                </ul>
+            </li>
+            <li><a href="oferta.html">OFERTAS ACADÉMICAS </a></li>
+            <li><a href="https://mail.sove.ec/moodle/login/index.php">Entorno Virtual</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+<!-- <a class="login-btn" href="login.html">INICIA SESIÓN</a>-->
+</ul>
+</nav>
+</div>
+<div id="overlay"></div>
+<button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
+
+<!-- SECCION 1: PORTADA PRINCIPAL ESTILO PARALLAX  -->
+<section class="portada-principal-parallax">
+    <div class="contenido-portada-principal">
+        <h1>Conduce tu Futuro con Excelencia</h1>
+        <p>Bienvenido a la Escuela de Capacitación para Conductores Profesionales de Esmeraldas. Formamos conductores responsables, seguros y altamente calificados, comprometidos con el desarrollo vial del país. Únete a nuestra comunidad y da el primer paso hacia una carrera profesional en el volante.</p>
+        <a href="https://wa.me/593990230465" target="_blank" class="boton-portada">Contáctanos ahora</a>
+
+    </div>
+</section>
+
+<!-- SECCION 2: INFORMACIÓN TELEFÓNICA -->
+<section class="seccion tipo-celular info-celular">
+    <div class="contenedor-info">
+        <h2 class="titulo-info">
+            <strong class="verde-info">Información telefónica:</strong>
+            <a class="telefono-whatsapp" href="https://wa.me/593990230465" target="_blank" rel="noopener noreferrer">0990230465</a>
+        </h2>
+    </div>
+    <div class="decoracion-lateral"></div>
+</section>
+
+<!-- SECCION 3: FORMACION DE CALIDAD  -->
+<section class="mision-sove">
+  <div class="mision-texto">
+    <h2>Formación de calidad</h2>
+    <p>
+     La Escuela de Conducción de Esmeraldas ha brindado enseñanza con enfoque en responsabilidad, seguridad y motivación. Estamos donde nos necesites, ¡únete hoy mismo!
+ </p>
+ <a href="transparencia.html" class="btn-vermas-blanco">Ver eventos</a>
+
+</div>
+<div class="mision-video">
+    <video autoplay muted loop playsinline>
+      <source src="videos/mision.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+      </video>
+  </div>
+</section>
+
+<!-- SECCION 4: Bienvenidos a S.O.V.E -->
+<section class="seccion seccion-welcome">
+  <div class="bienvenida-texto"><h2>Bienvenidos a S.O.V.E</h2>
+    <p>En la Escuela de Capacitación para Conductores Profesionales de Esmeraldas (E.C.C.P.E), parte del Sindicato Obreros del Volante de Esmeraldas (S.O.V.E), nos enorgullece ofrecer programas de formación de alta calidad orientados al desarrollo profesional y responsable de nuevos conductores. Aquí encontrarás nuestras ofertas académicas diseñadas para brindarte todas las herramientas necesarias para convertirte en un conductor profesional altamente capacitado. </p>
+</div>
+<div class="bienvenida-imagen"><img alt="Vehículo SOVE" src="img/welcome-2.png"/></div>
+<div class="texto">
+</div></section>
+
+<!-- SECCION 5: INICIATIVAS Y MISIÓN -->
+<section class="seccion-dividida-final">
+  <div class="columna izquierda-final">
+    <div class="tarjeta-superpuesta">
+      <h3>Misión</h3>
+      <p>Formar conductores profesionales con valores éticos y morales con calidad, eficiencia y solidaridad, capacidad de Liderazgo y con finalidad de contribuir al desarrollo Integral de la patria y asegurar la supervivencia con apego a las normas, leyes y reglamentos de tránsito, transporte terrestre y seguridad vial.</p>
+      <a href="nosotros.html#mision-detalle">Leer más</a>
+  </div>
+</div>
+<div class="columna derecha-final">
+    <div class="tarjeta-superpuesta">
+      <h3>Visión</h3>
+      <p>Alcanzar una verdadera excelencia educativa en los nuevos conductores profesionales que sean proactivos, en concordancia del progreso de las técnicas y de las ciencias en base al permanente cultivo de valores con la aplicación de la ley orgánica de transporte terrestre, tránsito y seguridad vial.</p>
+      <a href="nosotros.html#vision-detalle">Leer más</a>
+  </div>
+</div>
+</section>
+
+<!-- SECCION 6: Servicios Brindados -->
+<section class="seccion servicios-rediseñados"><h2 class="fade-up titulo-servicios"><span class="verde-texto">Servicios</span> <span class="azul-texto">Brindados</span></h2>
+    <a href="nosotros.html" class="enlace-servicio"><div class="servicio-box">
+        <img alt="Prácticos de Conducción" class="solo-imagen-redonda" src="img/image-S5-2.png"/>
+        <h3>Prácticos de Conducción</h3>
+        <p>Clases para principiantes y avanzados, con prácticas reales en carretera y estacionamiento.</p>
+    </div></a>
+    <a href="nosotros.html" class="enlace-servicio"><div class="servicio-box">
+        <img alt="Capacitaciones Especiales" class="solo-imagen-redonda" src="img/image-S5-1.png"/>
+        <h3>Capacitaciones Especiales</h3>
+        <p>Cursos para personas con discapacidad y manejo en condiciones adversas con autos mecánicos o automáticos.</p>
+    </div></a>
+    <a href="nosotros.html" class="enlace-servicio"><div class="servicio-box">
+        <img alt="Cursos Teóricos" class="solo-imagen-redonda" src="img/image-S5-3.png"/>
+        <h3>Cursos Teóricos</h3>
+        <p>Instrucción en normativas de tránsito, señales viales y simulacros de examen para la licencia.</p>
+    </div></a>
+</section>
+
+<!-- SECCION 7: OFERTAS CARRUSEL -->
+<section class="nuevo-carrusel moderno">
+<!-- SECCION : NUEVO CARRUSEL -->
+  <h2 class="titulo-autoridades fade-up" style="color: #1d2443;">Ofertas Académicas</h2>
+  <div class="carrusel-interactivo owl-carousel" id="carruselInteractivo">
+
+    <!-- Tarjeta/Carta tipo A1-A.1 -->
+    <a href="oferta.html?licencia=a1" style="text-decoration: none; color: inherit;">
+      <div class="slide-carta">
+        <img src="img/OFA0.png" alt="Tipo A1" />
+        <div class="overlay">
+          <div class="info">
+            <span>Licencia Profesional</span>
+            <h3>Tipo A1</h3>
+        </div>
+        <div class="icono">&#10132;</div>
+    </div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo C -->
+<a href="oferta.html?licencia=c" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA1.png" alt="Tipo C" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo C</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo C1/C.1 -->
+<a href="oferta.html?licencia=c1" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA2.png" alt="Tipo C1" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo C1</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo D -->
+<a href="oferta.html?licencia=d" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA3.png" alt="Tipo D" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo D</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E -->
+<a href="oferta.html?licencia=e" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA5.png" alt="Tipo E" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E Regular -->
+<a href="oferta.html?licencia=er" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA7.png" alt="Tipo E Regular" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E - Regular</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+<!-- Tarjeta/Carta tipo E Convalidado -->
+<a href="oferta.html?licencia=ec" style="text-decoration: none; color: inherit;">
+  <div class="slide-carta">
+    <img src="img/OFA8.png" alt="Tipo E Convalidando" />
+    <div class="overlay">
+      <div class="info">
+        <span>Licencia Profesional</span>
+        <h3>Tipo E - Convalidando</h3>
+    </div>
+    <div class="icono">&#10132;</div>
+</div>
+</div>
+</a>
+
+</div>
+</section>
+
+
+<!-- SECCION 8: COMITE EJECUTIVO-->
+<section class="green-committee">
+    <div class="green-header-card">
+        <h2>COMITE EJECUTIVO</h2>
+        <p>Escuela de Capacitación para Conductores Profesionales de Esmeraldas</p>
+    </div>
+    <div class="green-grid">
+
+        <section class="comite-ejecutivo">
+            <div class="comite-columna-izquierda">
+                <img src="img/Imagen de miembros.jpg" alt="Imagen de miembros" class="comite-img">
+                <p class="comite-texto">
+                    El actual Comité Ejecutivo está completamente comprometido con su trabajo en beneficio del Sindicato y de todos sus miembros. Seguiremos avanzando con determinación para fortalecer la institución y mantener en alto el prestigio ganado a lo largo de sus más de 111 años de vida jurídica.
+                </p>
+            </div>
+            <div class="comite-columna-derecha">
+
+                <div class="comite-miembros">
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">GOMEZ NIEVE GLOTIS GOLIAD</div>
+                            <div class="card-body">Director Administrativo de la Escuela de Capacitación para Conductores Profesionales de Esmeraldas</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                    </div>
+                    <!-- Fila 1 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">GOMEZ NIEVE GLOTIS GOLIAD</div>
+                            <div class="card-body">Secretario general</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">CUERO CORTEZ YOLANDA EFIGENIA</div>
+                            <div class="card-body">Secretario general</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 2 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">VALDEZ SEGURA ANGEL SEGUNDO</div>
+                            <div class="card-body">Secretario de actas y comunicaciones</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">BERMUDEZ PALMA MARIA ESPERANZA </div>
+                            <div class="card-body">Secretario de actas y comunicaciones</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila  3-->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">PRADO ERAZO WILSON EDMUNDO</div>
+                            <div class="card-body">Secretario de organización propaganda y estadística</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">SOLIS YAGUAL SEGUNDO SOCRATES</div>
+                            <div class="card-body">Secretario de organización propaganda y estadística</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 4 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">BARRE PALACIOS JOSE ENRIQUE</div>
+                            <div class="card-body">Secretario de tránsito, transporte terrestre y vialidad</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">MOSQUERA MOTATO LANDER ALBERTO</div>
+                            <div class="card-body">Secretario de tránsito, transporte terrestre y vialidad</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 5 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">PRIAS WEIR MILLER ENRIQUE</div>
+                            <div class="card-body">Secretario de finanzas</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">LOPEZ VASQUEZ CARLOS ALBERTO</div>
+                            <div class="card-body">Secretario de finanzas</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 6 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">RODRIGUEZ QUIÑONEZ ROGER SEGUNDO</div>
+                            <div class="card-body">Secretario de asuntos sociales y deportes</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">CALVOPIÑA CADENA NESTOR EFRAIN</div>
+                            <div class="card-body">Secretario de asuntos sociales y deportes</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 7 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">ABAD VALVERDE GLESER DARWIN</div>
+                            <div class="card-body">Secretario de educación sindical y cooperativismo</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">BEDON TIRCIO ANGEL JUNIOR</div>
+                            <div class="card-body">Secretario de educación sindical y cooperativismo</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 8 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">CABEZAS CAÑOLA GALO DANIEL</div>
+                            <div class="card-body">Secretario de biblioteca archivo y prensa</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">CASTILLO SANCHEZ ANDERSON</div>
+                            <div class="card-body">Secretario de biblioteca archivo y prensa</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    
+                    <!-- EJECUTIVO VOCALES -->
+                    <div class="green-header-card">
+                        <h2>EJECUTIVO VOCALES</h2>
+                        <p>Escuela de Capacitación para Conductores Profesionales de Esmeraldas</p>
+                    </div>
+                    <!-- Fila 1 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">MONTALVO QUIÑONEZ ALCIDES LITINIO</div>
+                            <div class="card-body">1er VOCAL</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">BONE ZAMBRANO LUIS AGUSTIN</div>
+                            <div class="card-body">1er VOCAL</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila 2 -->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">QUIÑONEZ ANGULO ISAIAS</div>
+                            <div class="card-body">2do VOCAL</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">ALAVA OLMEDO MARCOS ENRIQUE</div>
+                            <div class="card-body">2do VOCAL</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                    <!-- Fila  3-->
+                    <div class="fila">
+                        <div class="miembro">
+                            <div class="card-header">CAICEDO ZUÑIGA ALEXANDER</div>
+                            <div class="card-body">3er VOCAL</div>
+                            <div class="cargo-label">Oficial</div>
+                        </div>
+                        <div class="miembro">
+                            <div class="card-header">BAUTISTA HIDALGO ENMA DOLORES</div>
+                            <div class="card-body">3er VOCAL</div>
+                            <div class="cargo-label">Suplente</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+<!-- SECCION PIE DE PAGINA -->
+<section class="seccion seccion-final">
+    <div class="col info">
+        <a href="index.html"><img alt="Logo SOVE" class="logo-footer grande" src="./img/icon-sove.eccpe.ico"/></a>
+        <p>Cada conductor profesional es un héroe anónimo en las rutas, responsable de transportar personas o mercancías con compromiso, seguridad y eficiencia.</p>
+        <p><i class="fa-solid fa-location-dot ubicacion-icono"></i> Av.Olmedo y Roca Fuerte, Esmeraldas - ECU</p>
+        <p class="telefono"><span class="telefono-hover"><i class="fas fa-phone"></i> <span class="contacto-label">¡Contáctanos hoy!</span><br/><span class="telefono-numero">1800-222-155</span></span></p>
+    </div>
+    <div class="col servicios">
+        <h3>SERVICIOS</h3>
+        <ul>
+            <li><a href="oferta.html">Cursos de Conducción de Autos</a></li>
+            <li><a href="oferta.html#psicosensometrico">Examen Psicosensométrico</a></li>
+            <li><a href="oferta.html">Curso de Recuperación de Puntos</a></li>
+        </ul>
+    </div>
+    <div class="col mapa">
+        <h3>ENCUÉNTRANOS EN:</h3>
+        <iframe allowfullscreen="" height="200" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.2485322107286!2d-79.654238!3d0.968329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc01a38c8e4b%3A0xf6c68fe9cf29c463!2sSindivato%20De%20Choferes%20De%20Volqueta!5e0!3m2!1ses!2sec!4v1739243174615!5m2!1ses!2sec" style="border:0;" width="100%"></iframe>
+    </div>
+</section>
+
+<!-- ======================= AQUÍ EMPIEZAN LOS SCRIPT ======================= -->
+
+<!-- === SCRIPT: CONFIGURACIÓN INICIAL AL CARGAR === -->
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const hash = window.location.hash;
+    if (hash === '#mision-detalle') {
+      const seccion = document.querySelector(hash);
+      if (seccion) {
+        seccion.style.backgroundImage = 'none'; // Oculta la imagen
+        seccion.style.backgroundColor = '#E8F5EE'; // O aplica un fondo suave si deseas
+    }
+}
+});
+</script>
+<!-- === SCRIPT: NAVBAR SCROLL TRANSPARENTE === -->
+<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY === 0) {
+            navbar.classList.add("transparente");
+            navbar.style.top = "47px";
+        } else {
+            navbar.classList.remove("transparente");
+            navbar.style.top = "0";
+        }
+    });
+</script>
+<!-- === SCRIPT: MENÚ HAMBURGUESA RESPONSIVO === -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const closeBtn = document.getElementById("close-menu");
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                document.body.classList.remove("menu-open");
+            });
+        }
+
+        const toggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        const dropdown = document.querySelector(".dropdown");
+
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+        });
+
+        dropdown.addEventListener("click", function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle("active");
+            }
+        });
+    });
+</script>
+<!-- === SCRIPT: MENÚ HAMBURGUESA RESPONSIVO === -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hiddenBar = document.getElementById("hidden-bar");
+        const overlay = document.getElementById("overlay");
+        const openHiddenBar = document.getElementById("open-hidden-bar");
+        const closeHiddenBar = document.getElementById("close-hidden-bar");
+        const submenuToggle = document.querySelector(".submenu-toggle");
+
+        openHiddenBar.addEventListener("click", () => {
+            hiddenBar.classList.add("active");
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+
+        closeHiddenBar.addEventListener("click", () => {
+            hiddenBar.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+        });
+
+        overlay.addEventListener("click", () => {
+            hiddenBar.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+        });
+
+        submenuToggle.querySelector(".toggle-btn").addEventListener("click", () => {
+            submenuToggle.querySelector(".submenu").classList.toggle("active");
+        });
+    });
+</script>
+<!-- === SCRIPT: SUBMENÚ DESPLEGABLE === -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const soveLink = document.querySelector(".sove-toggle");
+        const dropdownMenu = soveLink.nextElementSibling;
+        let isOpen = false;
+
+        soveLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            isOpen = !isOpen;
+            dropdownMenu.style.display = isOpen ? "block" : "none";
+        });
+
+        document.addEventListener("click", function (e) {
+            if (!soveLink.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = "none";
+                isOpen = false;
+            }
+        });
+    });
+</script>
+<!-- === SCRIPT: NAVBAR SCROLL TRANSPARENTE === -->
+<script>
+    window.addEventListener("scroll", function () {
+        const hiddenBtn = document.getElementById("open-hidden-bar");
+        if (window.scrollY > 0) {
+            hiddenBtn.classList.add("con-sombra");
+        } else {
+            hiddenBtn.classList.remove("con-sombra");
+        }
+    });
+</script>
+<!-- === SCRIPT: CONTROL DEL CARRUSEL AUTOMÁTICO === -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function moveCarousel() {
+            currentIndex++;
+            if (currentIndex > totalCards - visibleCards) {
+                currentIndex = 0;
+            }
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        setInterval(moveCarousel, 3000);
+    });
+</script>
+<!-- === SCRIPT: CONTROL DEL CARRUSEL AUTOMÁTICO === -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        const nextBtn = document.createElement('button');
+        const prevBtn = document.createElement('button');
+
+        nextBtn.innerHTML = '&#10095;';
+        prevBtn.innerHTML = '&#10094;';
+
+        nextBtn.classList.add('carousel-nav', 'next');
+        prevBtn.classList.add('carousel-nav', 'prev');
+
+        document.querySelector('.carousel-horizontal').appendChild(nextBtn);
+        document.querySelector('.carousel-horizontal').appendChild(prevBtn);
+
+        let currentIndex = 0;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function updateCarousel() {
+            if (currentIndex < 0) currentIndex = cards.length - visibleCards;
+            if (currentIndex > cards.length - visibleCards) currentIndex = 0;
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex--;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    });
+</script>
+<!-- === SCRIPT SIN DESCRIPCIÓN === -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- === SCRIPT: CONTROL DEL CARRUSEL AUTOMÁTICO === -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- === SCRIPT: CONTROL DEL CARRUSEL AUTOMÁTICO === -->
+<script>
+    $(document).ready(function(){
+        $('.ofertas-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:true,
+            navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+            items:4,
+            slideBy:1,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{ items:1 },
+                600:{ items:2 },
+                1000:{ items:4 }
+            }
+        });
+    });
+</script>
+<!-- === SCRIPT: CONFIGURACIÓN INICIAL AL CARGAR === -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-links li a");
+    const currentPage = location.pathname.split('/').pop().toLowerCase();
+
+    links.forEach(link => {
+      const linkHref = link.getAttribute("href").split('/').pop().toLowerCase();
+      if (linkHref === currentPage) {
+        link.classList.add("activo");
+    }
+});
+});
+</script>
+<!-- === SCRIPT: CONTROL DEL CARRUSEL AUTOMÁTICO === -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".carousel-container");
+        const items = document.querySelectorAll(".carousel-item");
+        const carouselBox = document.querySelector(".carousel-box");
+        let currentIndex = 0;
+        let interval;
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % items.length;
+            container.style.transform = `translateX(-${currentIndex * 320}px)`;
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            container.style.transform = `translateX(-${currentIndex * 320}px)`;
+        }
+
+        function startAutoScroll() {
+            interval = setInterval(showNext, 4000);
+        }
+
+        function stopAutoScroll() {
+            clearInterval(interval);
+        }
+
+        startAutoScroll();
+
+        document.getElementById("next-btn").addEventListener("click", showNext);
+        document.getElementById("prev-btn").addEventListener("click", showPrev);
+
+        carouselBox.addEventListener("mouseenter", stopAutoScroll);
+        carouselBox.addEventListener("mouseleave", startAutoScroll);
+    });
+</script>
+<!-- === SCRIPT SIN DESCRIPCIÓN === -->
+<script src="script-carrusel.js"></script>
+
+<!-- SCRIPT: NUEVO CARRUSEL -->
+<script>
+  function moverNuevoCarrusel(direccion) {
+    const carrusel = document.getElementById("carruselNuevo");
+    const scrollCantidad = 250;
+    carrusel.scrollBy({ left: direccion * scrollCantidad, behavior: 'smooth' });
+}
+</script>
+
+
+<!-- SCRIPT: NUEVO CARRUSEL FUNCIONAL -->
+<script>
+  function moverNuevoCarrusel(direccion) {
+    const carrusel = document.getElementById("nuevoCarrusel");
+    const desplazamiento = 250;
+    carrusel.scrollBy({ left: direccion * desplazamiento, behavior: 'smooth' });
+}
+</script>
+
+
+<!-- SCRIPT CARRUSEL INTERACTIVO -->
+<script>
+  const carrusel = document.getElementById('carruselInteractivo');
+  let isDown = false;
+  let startX, scrollLeft;
+
+  carrusel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carrusel.classList.add('active');
+    startX = e.pageX - carrusel.offsetLeft;
+    scrollLeft = carrusel.scrollLeft;
+});
+  carrusel.addEventListener('mouseleave', () => {
+    isDown = false;
+    carrusel.classList.remove('active');
+});
+  carrusel.addEventListener('mouseup', () => {
+    isDown = false;
+    carrusel.classList.remove('active');
+});
+  carrusel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carrusel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carrusel.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+
+<!-- === SCRIPT: CONFIGURACIÓN CARRUSEL DE OFERTAS CON OWL === -->
+<script>
+$(document).ready(function(){
+    $('#carruselInteractivo').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:true,
+        navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+        items:4,
+        slideBy:1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{ items:1 },
+            600:{ items:2 },
+            1000:{ items:4 }
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>S.O.V.E — E.C.C.P.E</title>
+  <link href="styles.css" rel="stylesheet"/>
+<!-- Favicon -->
+<link href="img/icon-sove.eccpe.png" rel="icon" type="image/png"/>
+<link href="img/icon-sove.eccpe.ico" rel="icon" type="image/x-icon">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
+</link></head>
+<body>
+<!-- SECCION ENCABEZADO -->
+<!-- Barra Verded -->
+<section class="seccion cabecera-verde">
+  <div class="col redes">
+    <p><strong>Redes Sociales:</strong>
+      <a class="icon-circle" href="https://www.facebook.com/share/16D8nrnwRR/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="icon-circle" href="https://wa.me/593990230465" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </p>
+  </div>
+  <div class="col titulo-centro">
+    <h2>Escuela de Capacitación para Conductores Profesionales de Esmeraldas</h2>
+    <p>Sindicato Obreros del Volante de Esmeraldas</p>
+  </div>
+  <div class="col correo" style="text-align: right;">
+    <p><a class="correo-blanco" href="mailto:sove.eccpe@gmail.com"><i class="fas fa-envelope icono-correo"></i> sove.eccpe@gmail.com</a></p>
+  </div>
+</section>
+<!-- NAVBAR PRINCIPAL -->
+<!-- MENU DE PC -->
+<header class="navbar transparente">
+  <nav class="nav-container">
+    <div class="nav-logo"><a href="index.html"><img alt="Logo SOVE" class="logo-navbar" src="img/SOVE_ECCPE.png"/></a></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-links right">
+        <li><a href="index.html">INICIO</a></li>
+        <li class="dropdown">
+          <a class="verde sove-toggle" href="#">S.O.V.E. ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="autoridades.html">Autoridades</a></li>
+            <li><a href="transparencia.html">Eventos</a></li>
+            <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" rel="noopener noreferrer" target="_blank">Marco Legal</a></li>
+            <li> <a href="https://drive.google.com/file/d/1kY9H4NSQLBHBdLx3G8VhyV2xz1ulZbFn/view?usp=sharing" rel="noopener noreferrer" target="_blank">Reglamento Interno</a></li>
+          </ul>
+        </li>
+        <li><a href="oferta.html">OFERTAS ACADÉMICAS </a></li>
+        <li><a href="https://mail.sove.ec/moodle/login/index.php">ENTORNO VIRTUAL</a></li>
+        <li><a href="contactos.html">CONTACTOS</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Menú Hidden-Bar -->
+<!-- MENU DE ANDROID/IOS -->
+<div class="hidden-bar" id="hidden-bar">
+  <div class="hidden-bar-header">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img alt="Logo SOVE" src="img/SOVE_ECCPE.png" style="height: 55px;"/>
+    </div>
+    <button id="close-hidden-bar" style="background: none; border: none; font-size: 1.8em; color: white;">×</button>
+  </div>
+  <nav class="hidden-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li class="submenu-toggle">
+        <span class="menu-item">S.O.V.E. <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button></span>
+        <ul class="submenu">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="autoridades.html">Autoridades</a></li>
+          <li><a href="transparencia.html">Eventos</a></li>
+          <li><a href="https://drive.google.com/file/d/1udExhM2wCZSZhgKxTzAyn682Gh_b72es/view?usp=sharing" rel="noopener noreferrer" target="_blank">Marco Legal</a></li>
+          <li> <a href="https://drive.google.com/file/d/1kY9H4NSQLBHBdLx3G8VhyV2xz1ulZbFn/view?usp=sharing" rel="noopener noreferrer" target="_blank">Reglamento Interno</a></li>
+        </ul>
+      </li>
+      <li><a href="oferta.html">OFERTAS ACADÉMICAS </a></li>
+      <li><a href="https://mail.sove.ec/moodle/login/index.php">Entorno Virtual</a></li>
+      <li><a href="contactos.html">Contactos</a></li>
+<!-- <a class="login-btn" href="login.html">INICIA SESIÓN</a>-->
+</ul>
+</nav>
+</div>
+<div id="overlay"></div>
+<button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
+<!-- SECCION 1: Banner con overlay  -->
+<section class="banner-oferta sin-espacio">
+  <div class="banner-container">
+    <img alt="Banner Oferta" class="banner-img" src="img/banner-nosotros.png"/>
+    <div class="banner-overlay"></div>
+  </div>
+</section>
+</section>
+
+<!-- SECCION 2.1: ABOUT US -->
+<section class="about-us personalizada">
+  <div class="about-texto personalizada-texto">
+    <h2>Formamos Profesionales con Propósito</h2>
+    <h3 class="subtitulo-about">¿POR QUÉ ESTUDIAR CON NOSOTROS?</h3>
+    <p>
+      En la Escuela de Capacitación para Conductores Profesionales de Esmeraldas, formamos más que conductores: preparamos profesionales con visión, ética y compromiso. Creemos que una movilidad segura comienza con una educación de calidad. Por eso, combinamos formación técnica de alto nivel, enfoque humano y valores cívicos, brindando a nuestros estudiantes las herramientas para transformar el transporte y servir a la sociedad con excelencia.
+    </p>
+  </div>
+</section>
+
+
+<!-- Efecto PARALLAX -->
+<section class="parallax-about">
+  <div class="parallax-content">
+    <h2>Una Escuela con Propósito</h2>
+    <p>Inspiramos una nueva cultura vial desde la formación de excelencia</p>
+  </div>
+</section>
+
+<!-- SECCION 3: ADMISIÓN Y CUOTAS === -->
+<section class="admision-cuotas">
+  <div class="admision-texto">
+    <h2>Admisión y Ofertas</h2>
+    <p>
+      Infórmate sobre el proceso de admisión, requisitos y las ofertas de nuestros programas de formación profesional.
+    </p>
+    <a class="btn-vermas-blanco" href="oferta.html#ofertas-academicas">Inscríbete ya</a>
+  </div>
+  <div class="admision-imagen">
+    <img alt="Alumnos en clase" src="img/admision.jpg"/>
+  </div>
+</section>
+
+<!-- SECCION 4: Mision-->
+<section class="seccion-fondo-opacado1" id="mision-detalle"></section>
+<!-- SECCION 5: Vision-->
+<section class="seccion-fondo-opacado2" id="vision-detalle"></section>
+<!-- SECCION 5: CULTURA ORGANIZACIONAL -->
+
+<!-- SECCION 5: CULTURA ORGANIZACIONAL -->
+<section class="cultura-organizacional">
+  <h2 class="titulo-cultura">CULTURA ORGANIZACIONAL</h2>
+  <div class="cultura-contenedor">
+    <div class="cultura-card">
+      <img src="img/cultura-1.jpg" alt="¿Por qué lo hacemos?">
+      <div class="cultura-texto">
+        <h3>¿Por qué lo hacemos?</h3>
+        <p>En la Escuela de Capacitación para Conductores Profesionales de Esmeraldas formamos conductores con criterio, empatía y responsabilidad, preparados no solo para operar un vehículo, sino para contribuir activamente a una movilidad más segura, eficiente y humana. Nuestro compromiso es educar profesionales íntegros, conscientes de su rol en la sociedad y capaces de generar un impacto positivo desde el volante.</p>
+      </div>
+    </div>
+    <div class="cultura-card">
+      <img src="img/cultura-2.png" alt="¿Cómo lo hacemos?">
+      <div class="cultura-texto">
+        <h3>¿Cómo lo hacemos?</h3>
+        <p>Ofrecemos una formación de alto nivel, enfocada en la excelencia académica y en brindar a nuestros estudiantes una experiencia educativa integral que enriquezca su desarrollo como conductores profesionales comprometidos con la seguridad y el servicio a la sociedad.</p>
+      </div>
+    </div>
+    <div class="cultura-card">
+      <img src="img/cultura-3.png" alt="¿Qué hacemos?">
+      <div class="cultura-texto">
+        <h3>¿Qué hacemos?</h3>
+        <p>Somos pioneros en la formación de conductores profesionales en el país, y nos enorgullece preparar a conductores altamente capacitados, responsables y comprometidos con una movilidad segura y de calidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION 6: NUESTROS VALORES -->
+<section style="padding: 60px 20px;">
+  <style>
+    .cultura-box {
+      max-width: 320px;
+      flex: 1;
+      border: 1px solid #0a962f;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+    }
+
+    .cultura-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .cultura-box .contenido {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .cultura-box .contenido p {
+      text-align: justify;
+    }
+  </style>
+  <h2 style="background-color: #0a962f; color: white; padding: 12px 40px; border-radius: 16px; width: fit-content; margin: 0 auto; font-size: 2em; font-weight: bold;">
+    NUESTROS VALORES
+  </h2>
+  <hr style="width: 60%; margin: 20px auto; border: 1px solid #ccc;"/>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px; text-align: center;">
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">🏅</div>
+      <h3 style="margin: 10px 0;">Calidad</h3>
+      <p style="color: #333;">Cada persona es importante y nos esforzamos por formar conductores brindando la mejor calidad en cada lección</p>
+    </div>
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">🤝</div>
+      <h3 style="margin: 10px 0;">Confianza</h3>
+      <p style="color: #333;">Te ofrecemos la confianza y seguridad que necesitas en cada kilómetro de tu viaje.</p>
+    </div>
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">🎓</div>
+      <h3 style="margin: 10px 0;">Profesionalismo</h3>
+      <p style="color: #333;">Te formamos con compromiso, dedicación y excelencia para que puedas alcanzar tus objetivos.</p>
+    </div>
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">🤲</div>
+      <h3 style="margin: 10px 0;">Responsabilidad</h3>
+      <p style="color: #333;">La responsabilidad en la conducción es la clave para proteger la vida de todos en el camino.</p>
+    </div>
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">🛡️</div>
+      <h3 style="margin: 10px 0;">Seguridad</h3>
+      <p style="color: #333;">Más de 111 años formando conductores responsables y comprometidos con la seguridad vial.</p>
+    </div>
+    <div style="padding: 20px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      <div style="font-size: 40px; color: #0a962f;">⚖️</div>
+      <h3 style="margin: 10px 0;">Integridad</h3>
+      <p style="color: #333;">Enseñamos a conducir con respeto y ética, fomentando una cultura de seguridad vial y compromiso con la comunidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION PIE DE PAGINA -->
+<section class="seccion seccion-final">
+  <div class="col info">
+    <a href="index.html"><img alt="Logo SOVE" class="logo-footer grande" src="./img/icon-sove.eccpe.ico"/></a>
+    <p>Cada conductor profesional es un héroe anónimo en las rutas, responsable de transportar personas o mercancías con compromiso, seguridad y eficiencia.</p>
+    <p><i class="fa-solid fa-location-dot ubicacion-icono"></i> Av.Olmedo y Roca Fuerte, Esmeraldas - ECU</p>
+    <p class="telefono"><span class="telefono-hover"><i class="fas fa-phone"></i> <span class="contacto-label">¡Contáctanos hoy!</span><br/><span class="telefono-numero">1800-222-155</span></span></p>
+  </div>
+  <div class="col servicios">
+    <h3>SERVICIOS</h3>
+    <ul>
+      <li><a href="oferta.html">Cursos de Conducción de Autos</a></li>
+      <li><a href="oferta.html#psicosensometrico">Examen Psicosensométrico</a></li>
+      <li><a href="oferta.html">Curso de Recuperación de Puntos</a></li>
+    </ul>
+  </div>
+  <div class="col mapa">
+    <h3>ENCUÉNTRANOS EN:</h3>
+    <iframe allowfullscreen="" height="200" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.2485322107286!2d-79.654238!3d0.968329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc01a38c8e4b%3A0xf6c68fe9cf29c463!2sSindivato%20De%20Choferes%20De%20Volqueta!5e0!3m2!1ses!2sec!4v1739243174615!5m2!1ses!2sec" style="border:0;" width="100%"></iframe>
+  </div>
+</section>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY === 0) {
+      navbar.classList.add("transparente");
+      navbar.style.top = "47px";
+    } else {
+      navbar.classList.remove("transparente");
+      navbar.style.top = "0";
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const closeBtn = document.getElementById("close-menu");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      });
+    }
+
+    const toggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    const dropdown = document.querySelector(".dropdown");
+
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
+    });
+
+    dropdown.addEventListener("click", function (e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdown.classList.toggle("active");
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const hiddenBar = document.getElementById("hidden-bar");
+    const overlay = document.getElementById("overlay");
+    const openHiddenBar = document.getElementById("open-hidden-bar");
+    const closeHiddenBar = document.getElementById("close-hidden-bar");
+    const submenuToggle = document.querySelector(".submenu-toggle");
+
+    openHiddenBar.addEventListener("click", () => {
+      hiddenBar.classList.add("active");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+
+    closeHiddenBar.addEventListener("click", () => {
+      hiddenBar.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+
+    overlay.addEventListener("click", () => {
+      hiddenBar.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+
+    submenuToggle.querySelector(".toggle-btn").addEventListener("click", () => {
+      submenuToggle.querySelector(".submenu").classList.toggle("active");
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const soveLink = document.querySelector(".sove-toggle");
+    const dropdownMenu = soveLink.nextElementSibling;
+    let isOpen = false;
+
+    soveLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      isOpen = !isOpen;
+      dropdownMenu.style.display = isOpen ? "block" : "none";
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!soveLink.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownMenu.style.display = "none";
+        isOpen = false;
+      }
+    });
+  });
+</script>
+<script>
+  window.addEventListener("scroll", function () {
+    const hiddenBtn = document.getElementById("open-hidden-bar");
+    if (window.scrollY > 0) {
+      hiddenBtn.classList.add("con-sombra");
+    } else {
+      hiddenBtn.classList.remove("con-sombra");
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".carousel-track");
+    const cards = document.querySelectorAll(".carousel-track .oferta-card");
+    let currentIndex = 0;
+    const totalCards = cards.length;
+    const visibleCards = 4;
+    const cardWidth = cards[0].offsetWidth + 20;
+
+    function moveCarousel() {
+      currentIndex++;
+      if (currentIndex > totalCards - visibleCards) {
+        currentIndex = 0;
+      }
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    setInterval(moveCarousel, 3000);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const track = document.querySelector(".carousel-track");
+    const cards = document.querySelectorAll(".carousel-track .oferta-card");
+    const nextBtn = document.createElement('button');
+    const prevBtn = document.createElement('button');
+
+    nextBtn.innerHTML = '&#10095;';
+    prevBtn.innerHTML = '&#10094;';
+
+    nextBtn.classList.add('carousel-nav', 'next');
+    prevBtn.classList.add('carousel-nav', 'prev');
+
+    document.querySelector('.carousel-horizontal').appendChild(nextBtn);
+    document.querySelector('.carousel-horizontal').appendChild(prevBtn);
+
+    let currentIndex = 0;
+    const visibleCards = 4;
+    const cardWidth = cards[0].offsetWidth + 20;
+
+    function updateCarousel() {
+      if (currentIndex < 0) currentIndex = cards.length - visibleCards;
+      if (currentIndex > cards.length - visibleCards) currentIndex = 0;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex++;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex--;
+      updateCarousel();
+    });
+
+    updateCarousel();
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.ofertas-carousel').owlCarousel({
+      loop:true,
+      margin:20,
+      nav:true,
+      navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+      items:4,
+      slideBy:1,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive:{
+        0:{ items:1 },
+        600:{ items:2 },
+        1000:{ items:4 }
+      }
+    });
+  });
+</script>
+<script src="abrir-licencia.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-links li a");
+    const currentPage = location.pathname.split('/').pop().toLowerCase();
+
+    links.forEach(link => {
+      const linkHref = link.getAttribute("href").split('/').pop().toLowerCase();
+      if (linkHref === currentPage) {
+        link.classList.add("activo");
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ajustarScroll = (id) => {
+      const target = document.querySelector(id);
+      if (target) {
+        setTimeout(() => {
+          const offset = 80;
+          const y = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 100);
+      }
+    };
+
+    if (window.location.hash === "#mision-detalle") {
+      ajustarScroll("#mision-detalle");
+    } else if (window.location.hash === "#vision-detalle") {
+      ajustarScroll("#vision-detalle");
+    }
+  });
+</script>
+</body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".carousel-container");
+    const items = document.querySelectorAll(".carousel-item");
+    const carouselBox = document.querySelector(".carousel-box");
+    let currentIndex = 0;
+    let interval;
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % items.length;
+      container.style.transform = `translateX(-${currentIndex * 320}px)`;
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      container.style.transform = `translateX(-${currentIndex * 320}px)`;
+    }
+
+    function startAutoScroll() {
+      interval = setInterval(showNext, 4000);
+    }
+
+    function stopAutoScroll() {
+      clearInterval(interval);
+    }
+
+    startAutoScroll();
+
+    document.getElementById("next-btn").addEventListener("click", showNext);
+    document.getElementById("prev-btn").addEventListener("click", showPrev);
+
+    carouselBox.addEventListener("mouseenter", stopAutoScroll);
+    carouselBox.addEventListener("mouseleave", startAutoScroll);
+  });
+</script>
+<script src="script-carrusel.js"></script>
