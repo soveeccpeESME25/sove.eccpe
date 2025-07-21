@@ -1,0 +1,984 @@
+/* ===== RESET GENERAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Si necesitas compensar por navbar fija, usa esto en un contenedor específico */
+.main-wrapper {
+    padding-top: 95px;
+}
+/* === Protección global contra scroll lateral y desbordes === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+/* === INICIO ESTILOS SECCIÓN 1: CABECERA VERDE === */
+.cabecera-verde {
+  background-color: #0a962f;
+  color: white;
+  padding: 4px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+   gap: 20px;
+}
+
+.cabecera-verde .col {
+  flex: 1;
+}
+
+/* Columna izquierda: redes sociales */
+.cabecera-verde .col.redes p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.cabecera-verde .icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6de08e;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 14px;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.cabecera-verde .icon-circle:hover {
+  background-color: #51c475;
+}
+
+/* Columna central: título */
+.titulo-centro {
+  text-align: center;
+}
+
+.titulo-centro h2 {
+  font-size: 1.2em;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.titulo-centro p {
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: normal;
+  color: #d9ffd9;
+}
+
+/* Columna derecha: correo */
+.col.correo {
+  text-align: right;
+}
+
+.icono-correo {
+  margin-right: 6px;
+}
+
+.correo-blanco {
+  color: white;
+  text-decoration: none;
+}
+
+.correo-blanco:hover {
+  text-decoration: underline;
+}
+/* === FIN ESTILOS SECCIÓN 1: CABECERA VERDE === */
+
+/* === INICIO RESPONSIVE (POV ANDORID) SECCION 1: CABECERA VERDE === */
+@media (max-width: 768px) {
+  .cabecera-verde {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+    gap: 10px;
+}
+
+.cabecera-verde .col {
+    width: 100%;
+}
+
+.titulo-centro h2 {
+    font-size: 1em;
+    white-space: normal;
+}
+
+.titulo-centro p {
+    font-size: 0.85em;
+}
+
+.col.correo {
+    text-align: center !important;
+}
+
+.cabecera-verde .col.redes p {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+/* === FIN RESPONSIVE SECCIÓN 1: CABECERA VERDE === */
+
+
+/* === INICIO ESTILOS NAVBAR PRINCIPAL === */
+.navbar {
+  position: fixed;
+  top: 47px; /* Altura del encabezado verde */
+  width: 100%;
+  z-index: 999;
+  background-color: #1c1c1c;
+  transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.navbar.transparente {
+  background-color: transparent;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.nav-logo img.logo-navbar {
+   height: 85px;
+   margin-right: 20px;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: white !important;
+  font-weight: 700;
+  font-size: 0.82em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover > a {
+  color: #0a962f;
+}
+
+.nav-links li a.activo {
+  color: #0a962f !important;
+  font-weight: bold;
+}
+
+
+/* === MENÚ DESPLEGABLE === */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  min-width: 220px;
+  z-index: 999;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 16px;
+  color: #1a1a1a !important;   /* ← TEXTOS visibles */
+  font-weight: 600;
+  text-decoration: none;
+  background-color: white;
+  font-size: 0.8em;
+  text-shadow: none !important; /* ← Elimina ese efecto grisáceo */
+  opacity: 1 !important;        /* ← Refuerza visibilidad */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #0a962f;
+  color: white !important;
+}
+/* === FIN ESTILOS NAVBAR PRINCIPAL === */
+
+
+/* === INICIO ESTILOS RESPONSIVOS PARA NAVBAR === */
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+.nav-menu {
+    display: none; /* ← AQUI ESTABA FALTANDO */
+  }
+
+.nav-container {
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-menu {
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 240px;
+    background-color: #1c1c1c;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-links {
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav-links li {
+    border-bottom: 1px solid #333;
+}
+
+.nav-links li a {
+    padding: 14px 20px;
+    font-size: 1em;
+}
+
+.dropdown-menu {
+    position: static;
+    background-color: #2a2a2a;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: auto;
+    display: none;
+}
+
+.dropdown-menu li a {
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #0a962f;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+}
+/* === FIN ESTILOS RESPONSIVOS PARA NAVBAR === */
+
+/* === INICIO ESTILO PARA SOMBRA DEL BOTÓN DE MENÚ LATERAL === */
+.open-hidden-bar.con-sombra {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #2c2c2c;
+  border-radius: 6px;
+}
+/* === FIN ESTILO PARA SOMBRA DEL BOTÓN DE MENÚ LATERAL === */
+
+/* === INICIO ESTILOS SECCION PIE DE PAGINA (seccion-final) === */
+.seccion-final {
+  display: flex; /* ← ESTO ES CRUCIAL */
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.seccion-final .col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-footer {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.logo-footer.grande {
+  width: 230px;
+}
+
+.seccion-final h3 {
+  border-bottom: 2px solid green;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.seccion-final ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seccion-final ul li {
+  margin-bottom: 10px;
+}
+
+.seccion-final .servicios ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.seccion-final .servicios ul li a:hover {
+  color: #00ff00;
+}
+
+.telefono {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #76ff76;
+}
+
+.telefono-hover {
+  display: inline-block;
+  text-align: left;
+}
+
+.telefono-hover i,
+.telefono-hover {
+  font-size: 0.9em;
+  color: white;
+}
+
+.telefono-numero {
+  display: block;
+  font-size: 1.5em;
+  color: #76ff76;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.telefono-numero:hover {
+  color: #00ff00;
+}
+
+.ubicacion-icono {
+  font-size: 1.5em;
+  color: #fff;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+/* === FIN ESTILOS SECCION PIE DE PAGINA (seccion-final) === */
+
+/* === INICIO RESPONSIVE: SECCION PIE DE PAGINA (.seccion-final) === */
+@media (max-width: 768px) {
+  .seccion-final {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .seccion-final .col {
+    min-width: 100%;
+    padding: 0 10px;
+  }
+
+  .logo-footer.grande {
+    width: 180px;
+    margin: 0 auto 15px;
+  }
+
+  .telefono-hover {
+    text-align: center;
+  }
+
+  .seccion-final h3 {
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .seccion-final ul li {
+    margin-bottom: 8px;
+  }
+
+  .seccion-final iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+/* === FIN RESPONSIVE: SECCION PIE DE PAGINA === */
+
+
+@media (min-width: 769px) {
+  .open-hidden-bar,
+  #hidden-bar,
+  #overlay {
+    display: none !important;
+}
+}
+
+/* Corrige scroll lateral en móviles */
+.hidden-bar {
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hidden-bar * {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* === INICIO ESTILOS HIDDEN-BAR (MENÚ MÓVIL LATERAL) === */
+
+.hidden-bar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    color: white;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden-bar.active {
+    left: 0;
+}
+
+.hidden-bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-bottom: 1px solid #333;
+    font-size: 0.95em;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+#close-hidden-bar {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: white;
+}
+
+.open-hidden-bar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    z-index: 2100;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1500;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-nav ul li {
+    border-bottom: 1px solid #333;
+}
+
+.hidden-nav ul li a,
+.menu-item {
+    display: block;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.hidden-nav ul li a:hover {
+    background-color: #0a962f;
+    color: white;
+    border-left: 4px solid #0a962f;
+}
+
+.submenu {
+    display: none;
+    padding-left: 10px;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu li a {
+    padding-left: 30px;
+    font-size: 0.95em;
+    background-color: #252525;
+}
+
+.submenu li a:hover {
+    background-color: #0a962f;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.toggle-btn i {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* Ocultar en escritorio */
+@media(min-width: 769px){
+    .open-hidden-bar,
+    #hidden-bar,
+    #overlay {
+        display: none;
+    }
+}
+
+/* Ocultar navbar de escritorio en móviles */
+@media(max-width: 768px){
+    .navbar {
+        display: none;
+    }
+}
+
+/* === FIN ESTILOS HIDDEN-BAR (MENÚ MÓVIL LATERAL) === */
+/* Seccion 1 */
+/* SECCION 1 */
+/* INICIO ESTILOS SECCIÓN PARALLAX: CAMPAÑA SEGURIDAD VIAL */
+.parallax-campania {
+  background-image: url("img/parallax.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.parallax-campania::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.parallax-contenido {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.logo-parallax {
+  width: 120px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-contenido h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.parallax-contenido p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE: fallback sin parallax en móviles */
+@media (max-width: 768px) {
+  .parallax-campania {
+    background-attachment: scroll;
+    height: 330px;
+    padding: 40px 15px;
+  }
+
+  .parallax-contenido h2 {
+    font-size: 1.5em;
+  }
+
+  .parallax-contenido p {
+    font-size: 1em;
+  }
+
+  .logo-parallax {
+    width: 90px;
+    margin-bottom: 12px;
+  }
+}
+/* FIN ESTILOS SECCIÓN PARALLAX: CAMPAÑA SEGURIDAD VIAL */
+
+/* Seccion 2 */
+/* === INICIO ESTILOS SECCIÓN 2: PRESENTACIÓN DE LAS AUTORIDADES === */
+.seccion-presentacion {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.seccion-presentacion .presentacion-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.seccion-presentacion .columna-imagen {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.seccion-presentacion .columna-imagen img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* 👈 controla altura visible */
+  object-fit: contain; /* 👈 que no recorte la imagen */
+  border-radius: 1000px 1000px 0 0;
+  display: block;
+}
+
+.seccion-presentacion blockquote {
+  margin-top: 15px;
+  font-style: italic;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-grow: 0;
+}
+
+.seccion-presentacion .columna-texto {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.seccion-presentacion .columna-texto h3 {
+  background-color: #0a962f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.seccion-presentacion .columna-texto .contenido {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+/* === FIN ESTILOS SECCIÓN 2: PRESENTACIÓN DE LAS AUTORIDADES === */
+/* === INICIO ESTILOS SECCIÓN 3: AUTORIDADES === */
+.seccion-autoridades {
+  padding: 60px 30px;
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-attachment: fixed; /* Parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.seccion-autoridades::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Capa opaca */
+  z-index: -1;
+}
+
+.contenedor-autoridades {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.nivel-superior {
+  display: flex;
+  justify-content: center;
+}
+
+.nivel-inferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.autoridad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  max-width: 180px;
+  height: 360px; /* Altura estándar para todas las tarjetas */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.autoridad img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* NOMBRE – Altura fija y centrado */
+.autoridad .nombre {
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Esto cambia de center a flex-start */
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left center; /* Esto asegura alineación del texto */
+  padding: 0 4px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  width: 100%; /* para que ocupe el ancho del contenedor */
+}
+
+/* CARGO – Altura fija y centrado + Línea Blanca+ Línea Blanca */
+.autoridad .cargo {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: bold; /* ← esto es lo que da la negrilla */
+  color: #ffffff;     /* ← esto asegura el texto blanco */
+  text-align: center;
+  padding: 0 6px 16px 6px; /* espacio inferior extra para línea */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.autoridad .cargo::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 2px;
+}
+
+/* === NOMBRE CON BANDA ESTILO PARALELOGRAMO Y LÍNEA INFERIOR === */
+.nombre-decorado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 160px;
+  margin-top: 10px;
+}
+
+.nombre-trapecio {
+  background-color: #41a62a;
+  transform: skewX(-30deg);
+  width: 100%;
+  box-sizing: border-box;
+  height: 52px; /* Altura fija */
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.nombre-trapecio span {
+  transform: skewX(30deg); /* ← misma que la inversa de la caja */
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  line-height: 1.1em;
+}
+
+.nombre-linea {
+  background-color: #e65b1d;
+  height: 8px; /* más grueso, como en la imagen */
+  width: 100%;
+  transform: skewX(-50deg);
+  margin-top: 3px;
+  box-sizing: border-box;
+}
+/* Ajuste para el rol largo del Director Administrativo */
+.cargo-largo {
+  font-size: 0.85em;
+  line-height: 1.4em;
+  width: 540px; /* más ancho que los demás */
+}
+/* TÍTULO VERDE CENTRADO PARA SECCIÓN AUTORIDADES */
+.titulo-autoridades {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #0a962f; /* Verde */
+  margin: 40px 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* opcional para destacarlo */
+}
+/* TÍTULO VERDE CENTRADO PARA SECCIÓN AUTORIDADES */
+.titulo-autoridades {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #0a962f; /* Verde */
+  margin: 40px 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* opcional para destacarlo */
+}
+/* === FIN ESTILOS SECCIÓN 3: AUTORIDADES === */
+
+/* Seccion 4 */
+/* === INICIO ESTILOS SECCIÓN 4: EQUIPO EDUCATIVO === */
+.equipo-educativo {
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.equipo-educativo .titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.equipo-educativo .titulo h2 {
+  font-size: 2.2em;
+  color: #0a962f;
+}
+
+.equipo-educativo .grupo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.equipo-educativo .grupo .bloque {
+  flex: 1 1 480px;
+  max-width: 500px;
+}
+
+.equipo-educativo .grupo .bloque h3 {
+  background-color: #0a962f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.equipo-educativo .grupo .bloque img {
+  width: 100%;
+  height: 400px; /* ← Establece altura uniforme */
+  object-fit: cover; /* ← Recorta para que todas encajen */
+  object-position: center;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* === FIN ESTILOS SECCIÓN 4: EQUIPO EDUCATIVO === */
