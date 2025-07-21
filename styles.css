@@ -1193,8 +1193,6 @@ body {
 }
 }
 
-
-
 /* === NUEVO AJUSTE FINAL NAVBAR DEBAJO DE CABECERA VERDE === */
 .cabecera-verde {
     position: relative;
@@ -1216,7 +1214,7 @@ body {
 
 /* Animación para desplazamiento suave del navbar */
 .navbar {
-    transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out, top 0.3s ease-in-out;
 }
 
 /* Mejor visibilidad solo para los enlaces principales de navegación */
